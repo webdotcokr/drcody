@@ -1,0 +1,44 @@
+:root {
+    --main-brown01: #a5836a;
+    --main-brown02: #584439;
+
+}
+/* Global Font Family */
+* {
+  font-family: "Wanted Sans", sans-serif;
+  letter-spacing: -0.03em;
+}
+
+.btn {
+    border-radius: 999px;
+    color: #fff;
+}
+.btn.md {
+    padding: 16px 24px;
+}
+
+.btn.active {
+    background-color: var(--main-brown01);
+    color: #fff;
+}
+
+/* PC Font Sizes */
+.HeroText { font-size: 50px; font-weight: 700; }
+.MainSectionTitleNO { font-size: 24px; }
+.MainSectionTitle { font-size: 44px; }
+.PageTitleText { font-size: 64px; font-weight: 700;}
+.PageSubTitleText { font-size: 22px; }
+.SectionTitleText { font-size: 36px; }
+.BannerTitleText { font-size: 50px; }
+.H6 {font-size: 18px; font-weight: 700; line-height: 1.6; }
+
+/* Mobile Font Sizes */
+@media (max-width: 768px) {
+  .HeroText { font-size: 35px; }
+  .MainSectionTitleNO { font-size: 18px; }
+  .MainSectionTitle { font-size: 26px; }
+  .PageTitleText { font-size: 40px; }
+  .PageSubTitleText { font-size: 15px; }
+  .SectionTitleText { font-size: 24px; }
+  .BannerTitleText { font-size: 26px; }
+}
