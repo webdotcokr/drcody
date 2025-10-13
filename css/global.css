@@ -30,7 +30,10 @@
 .PageSubTitleText { font-size: 22px; }
 .SectionTitleText { font-size: 36px; }
 .BannerTitleText { font-size: 50px; }
-.H6 {font-size: 18px; font-weight: 700; line-height: 1.6; }
+.H3 {font-size: 30px; line-height: 1.4;}
+.H4 {font-size: 24px; line-height: 1.2;}
+.H5 {font-size: 20px; line-height: 1.5;}
+.H6 {font-size: 18px; line-height: 1.6; }
 
 /* Mobile Font Sizes */
 @media (max-width: 768px) {
