@@ -7,7 +7,7 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
 
 <!-- 페이지 컨텐츠 영역 HTML 작성 -->
 <main>
-    <section class="pt-[160px] pb-[60px] text-white bg-[url(<?php echo G5_THEME_URL?>/img/brandstoryCta.webp)] bg-cover">
+    <section class="pt-[160px] pb-[60px] text-white bg-[url(<?php echo G5_THEME_URL?>/img/brandstoryIntro.webp)] bg-cover">
         <div class="container">
         breadcrumbs
             <h1 class="PageTitleText">브랜드 스토리</h1>
@@ -33,74 +33,95 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
             '한 번의 구매로 평생 만족하는 가구', 그것이 우리의 첫 약속이었습니다.</p>
         </div>
     </section>
-    <section class="container py-20 text-center">
+    <section class=" py-20 text-center flex flex-col items-center">
         <h2 class="HeroText text-[var(--main-brown01)]">Chapter 2</h2>
         <h3 class="HeroText">Innovation</h3>
         <h4 class="mt-4 H4 font-bold">기술에서 해답을 찾다, 대한민국 특허 4건의 탄생</h4>
-        <div>
-            <img src="">
-            <p>450mm 익스텐션 기둥 기술</p>
-            <p>벽 손상 없는 완벽한 높이 조절</p>
-            <p>최소 높이 223cm / 최대 높이 268cm </p>
-        </div>
-        <div>
-            <div>
-                <p>4<span>건</span></p>
-                <p>특허 등록완료</p>
+        <div class="w-full bg-[url(<?php echo G5_THEME_URL?>/img/brandstory-3.webp)] bg-cover bg-center">
+            <div class="mt-24 bg-white w-[360px] p-4 m-auto rounded-xl shadow-xl">
+                <img src="<?php echo G5_THEME_URL?>/img/brandstory-2.webp">
+                <p class="mt-3 H6 font-bold">450mm 익스텐션 기둥 기술</p>
+                <p class="text-base">벽 손상 없는 완벽한 높이 조절</p>
+                <p class="mt-4 text-base font-medium">최소 높이 223cm / 최대 높이 268cm </p>
             </div>
-            <div></div>
+        </div>
+        <div class="my-12 flex gap-16 items-center font-bold">
+            <div class="">
+                <p class="H1">4<span class="H4">건</span></p>
+                <p class="H4">특허 등록완료</p>
+            </div>
+            <div class="w-[1px] h-[60px] bg-gray-300"></div>
              <div>
-                <p>0<span>%</span></p>
-                <p>벽 손상도</p>
+                <p class="H1">0<span class="H4">%</span></p>
+                <p class="H4">벽 손상도</p>
             </div>
         </div>
-        <p>우리는 해답을 찾기 위해 창업과 동시에 기술 개발에 매달렸습니다. <br/>벽에 어떠한 흔적도 남기지 않으면서, 어떤 천장 높이에도 완벽하게 대응하는 '최대 450mm 높이조절 익스텐션 기둥' 기술. <br/>10년의 고민과 기술력이 담긴 이 발명으로 대한민국 특허청으로부터 4건의 특허 및 디자인 등록을 받았습니다.</p>
-        <a class="" href="">특허기술 자세히 보기</a>
+        <p class="H6">우리는 해답을 찾기 위해 창업과 동시에 기술 개발에 매달렸습니다. <br/>벽에 어떠한 흔적도 남기지 않으면서, 어떤 천장 높이에도 완벽하게 대응하는 '최대 450mm 높이조절 익스텐션 기둥' 기술. <br/>10년의 고민과 기술력이 담긴 이 발명으로 대한민국 특허청으로부터 4건의 특허 및 디자인 등록을 받았습니다.</p>
+        <a class="mt-8 btn default" href="">특허기술 자세히 보기</a>
     </section>
-    <section class="container py-20 text-center">
+    <section class="bg-gray-50 py-20 text-center flex flex-col items-center">
         <h2 class="HeroText text-[var(--main-brown01)]">Chapter 3</h2>
         <h3 class="HeroText">The Beginning</h3>
         <h4 class="mt-4 H4 font-bold">진짜 좋은 제품을 만들려면 직접 해야 한다</h4>
-        <p>더 많은 고객을 만나면서 더 큰 책임감을 느꼈습니다. <br/>2020년, 우리는 완벽한 품질을 위해 과감한 투자를 결정했습니다.<br/>자체 직영 공장을 설립하고, 모든 자재를 인체에 무해한 E0등급 친환경 보드로 전면 교체했습니다.<br/>이 결정은 품질 클레임 90% 감소와 30,000+ 가구의 신뢰라는 결과로 돌아왔습니다.</p>
-        <div>
+        <p class="mt-8 H6">더 많은 고객을 만나면서 더 큰 책임감을 느꼈습니다. <br/>2020년, 우리는 완벽한 품질을 위해 과감한 투자를 결정했습니다.<br/>자체 직영 공장을 설립하고, 모든 자재를 인체에 무해한 E0등급 친환경 보드로 전면 교체했습니다.<br/>이 결정은 품질 클레임 90% 감소와 30,000+ 가구의 신뢰라는 결과로 돌아왔습니다.</p>
+        <div class="mt-16 justify-center flex items-center gap-16">
             <div>
-                <img src="">
-                <h4>2020년</h4>
-                <h5>자체 공장 설립</h5>
+                <img class="m-auto" src="<?php echo G5_THEME_URL?>/img/brandstory-icon-1.svg">
+                <h4 class="H5 font-bold">2020년</h4>
+                <h5 class="H5 font-bold">자체 공장 설립</h5>
+            </div>
+            <div class="w-[1px] h-[70px] bg-gray-300"></div>
+            <div>
+                <img class="m-auto" src="<?php echo G5_THEME_URL?>/img/brandstory-icon-2.svg">
+                <h4 class="H5 font-bold">E0등급</h4>
+                <h5 class="H5 font-bold">친환경 보드</h5>
+            </div>
+            <div class="w-[1px] h-[70px] bg-gray-300"></div>
+            <div>
+                <img class="m-auto" src="<?php echo G5_THEME_URL?>/img/brandstory-icon-3.svg">
+                <h4 class="H5 font-bold">90%</h4>
+                <h5 class="H5 font-bold">품질 클레임 감소</h5>
+            </div>
+            <div class="w-[1px] h-[70px] bg-gray-300"></div>
+            <div>
+                <img class="m-auto" src="<?php echo G5_THEME_URL?>/img/brandstory-icon-4.svg">
+                <h4 class="H5 font-bold">30,000+</h4>
+                <h5 class="H5 font-bold">신뢰받은 가구</h5>
             </div>
         </div>
-        <div>
-            <img src="">
-            <img src="">
+        <div class="m-auto mt-16 flex gap-2">
+            <img src="<?php echo G5_THEME_URL?>/img/brandstory-4.webp">
+            <img src="<?php echo G5_THEME_URL?>/img/brandstory-5.webp">
         </div>
     </section>
-    <section class="container py-20 text-center">
+    <section class="container flex flex-col items-center py-20 text-center">
         <h2 class="HeroText text-[var(--main-brown01)]">Chapter 4</h2>
         <h3 class="HeroText">Proof</h3>
         <h4 class="mt-4 H4 font-bold">당신의 삶 속에서, 우리의 약속은 현실이 됩니다.</h4>
-        <div>
-            <div>
-                80%
-                고객 자가 설치 성공률
+        <div class="mt-16 flex items-center gap-12">
+            <div class="text-left">
+                <p class="H1 font-bold">80<span class="H4">%</span></p>
+                <p class="H4 font-bold">고객 자가 설치 성공률</p>
             </div>
-            <p>'이사 갈 때 가져간다'는 우리의 약속은 더 이상 구호가 아닙니다.<br/> 실제 구매 고객 10명 중 8명이 전문가 도움 없이 직접 이전 설치에 성공하며 그 가치를 증명하고 있습니다. <br/>3만개가 넘는 가정에서, 디알코디는 단순한 가구를 넘어 삶의 변화에 함께하는 든든한 파트너가 되었습니다.</p>
+            <div class="w-[1px] h-[70px] bg-gray-300"></div>
+            <p class="H6 text-left">'이사 갈 때 가져간다'는 우리의 약속은 더 이상 구호가 아닙니다.<br/> 실제 구매 고객 10명 중 8명이 전문가 도움 없이 직접 이전 설치에 성공하며 그 가치를 증명하고 있습니다. <br/>3만개가 넘는 가정에서, 디알코디는 단순한 가구를 넘어 삶의 변화에 함께하는 든든한 파트너가 되었습니다.</p>
         </div>
-        <div>
-            <div>
-                <img src="">
-                <p>"이사 와서 그대로 옮겨 설치했어요!"</p>
-                <span>서울 강남구</span>
+        <div class="mt-16 mb-12 flex gap-6">
+            <div class="text-left">
+                <img src="<?php echo G5_THEME_URL?>/img/brandstory-6.webp">
+                <p class="mt-2 H6 font-semibold">"이사 와서 그대로 옮겨 설치했어요!"</p>
+                <span class="text-sm text-gray-600">서울 강남구</span>
             </div>
-             <div>
-                <img src="">
-                <p>"남편이랑 둘이서 1시간 만에 뚝딱!"</p>
-                <span>경기 분당구</span>
+             <div class="text-left">
+                <img src="<?php echo G5_THEME_URL?>/img/brandstory-7.webp">
+                <p class="mt-2 H6 font-semibold">남편이랑 둘이서 1시간 만에 뚝딱!"</p>
+                <span class="text-sm text-gray-600">경기 분당구</span>
             </div>
         </div>
-        <a class="" href="">실제 시공 사례 보기</a>
+        <a class="mt-12 btn default" href="">실제 시공 사례 보기</a>
     </section>
-    <section class="py-24 flex flex-col gap-12 text-center items-center bg-[url(<?php echo G5_THEME_URL?>/img/indexCta.webp)]">
-        <p class="text-3xl font-bold leading-[1.5] text-white">지금 바로 무료 견적을 받아보세요 <br/>10년 경험의 전문가가 24시간 내에 3D 설계안을 제공합니다.</p>
+    <section class="py-24 flex flex-col gap-12 text-center items-center bg-[url(<?php echo G5_THEME_URL?>/img/brandstoryCta.webp)] bg-cover">
+        <p class="text-3xl font-bold leading-[1.5] text-white">한 번의 선택이 평생의 만족이 되도록, <br/>디알코디는 오늘도 당신의 공간을 연구합니다. <br/>디알코디의 철학에 공감하셨다면, <br/>이제 당신의 공간에 대한 이야기를 들려주세요.</p>
         <a href="#" class="btn bg-white rounded-full p-2 pr-4 flex items-center gap-1.5 border border-gray-200">
             <img src="<?php echo G5_THEME_URL?>/img/btn-contact-icon.png">
             <span class="text-base font-semibold text-black">무료 견적 상담 시작하기</span>
