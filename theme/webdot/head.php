@@ -2,7 +2,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous" />
 <link rel="preload" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css" />
-
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1, width=device-width" />
 <?php
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
