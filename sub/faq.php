@@ -48,6 +48,12 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
     </section>
     <section class="py-16 container">
         <p class="SectionTitleText font-bold text-center">FAQ</p>
+        <div class="mt-12 flex flex-col gap-6">
+            <div class="p-5 rounded-sm border border-gray-200">
+                <div class="flex gap-2 H5 font-bold"><div class="inline-block w-[30px] h-[30px] text-center rounded-full text-white bg-[var(--main-brown01)]">Q</div><h3>배송 및 시공비는 어떻게 되나요?</h3></div>
+                <h4 class="mt-5 ml-8 bg-gray-50 p-6 rounded-md text-base text-gray-700">안녕하세요! 제주도를 제외하고 전국 무료 배송, 무료 시공 해 드립니다. 제주도의 경우 택배사가 아닌 화물로 보내드리며, 시공 매뉴얼을 보면 누구나 쉽게 시공 할 수 있습니다. 다른 문의사항이 있으시다면 고객센터 (1644-0524) 및 카카오톡 상담을 이용해주세요. 감사합니다.</h4>
+            </div>
+        </div>
         
     </section>
     <section class="py-24 flex flex-col gap-4 text-center items-center bg-gray-100">
