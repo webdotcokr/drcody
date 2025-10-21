@@ -1,4 +1,3 @@
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 <?php
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
@@ -17,4 +16,5 @@ if (G5_IS_MOBILE) {
 include_once(G5_PATH.'/head.sub.php');
 ?>
 
-헤더
+<!-- 기본 헤더 (테마가 없을 때만 사용) -->
+<header>헤더</header>

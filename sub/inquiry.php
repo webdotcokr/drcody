@@ -1,5 +1,4 @@
 <?php
-header('Content-Type: text/html; charset=utf-8');
 include_once('../common.php');
 $g5['title'] = "견적문의 신청";
 add_stylesheet('<link rel="stylesheet" href="'.G5_CSS_URL.'/global.css">', 0);
