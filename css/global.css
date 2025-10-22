@@ -144,6 +144,10 @@ label[required]::after,
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+  .container {
+    padding-left:20px;
+    padding-right:20px;
+  }
   /* Font Sizes */
   .btn {
     font-size: 16px;
@@ -298,7 +302,7 @@ label[required]::after,
   padding: 6px 14px;
   border-radius: 999px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .status-badge.waiting {
@@ -307,8 +311,8 @@ label[required]::after,
 }
 
 .status-badge.completed {
-  background-color: #fef3c7;
-  color: #92400e;
+  background-color: #fef8ee;
+  color: var(--main-brown03);
 }
 
 .status-badge .status-icon {
@@ -338,7 +342,6 @@ label[required]::after,
 .qa-section {
   background-color: #FAFAFA;
   border-radius: 8px;
-  margin-bottom: 16px;
   padding: 0 8px;
 }
 
@@ -403,13 +406,14 @@ label[required]::after,
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 6px;
-  font-size: 15px;
-  color: #6b7280;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #424242;
   background-color: #fff;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #F5F5F5;
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -449,7 +453,7 @@ label[required]::after,
 }
 
 .write-btn:hover {
-  background-color: var(--main-brown01);
+  background-color: var(--main-brown02);
 }
 
 /* 비밀번호 확인 모달 */
@@ -565,6 +569,7 @@ label[required]::after,
     padding: 14px 16px;
     flex-wrap: wrap;
     position: relative;
+    gap: 8px;
   }
 
   /* 첫 번째 줄: 자물쇠 아이콘 + 제목 */
@@ -574,13 +579,12 @@ label[required]::after,
 
   .list-row-cell:nth-child(2) {
     width: calc(100% - 180px) !important;
-    padding-left: 8px;
   }
 
   /* 자물쇠 아이콘 래퍼 */
   .lock-icon-wrapper {
-    width: 48px;
-    height: 48px;
+    width: 32px;
+    height: 32px;
   }
 
   /* 두 번째 줄: 작성자 + 날짜 */
@@ -594,6 +598,7 @@ label[required]::after,
 
   .list-row-cell:nth-child(3)::after {
     content: " " attr(data-date);
+    margin-left: 12px;
   }
 
   /* 날짜 컬럼 숨김 (작성자에 통합) */
@@ -604,23 +609,23 @@ label[required]::after,
   /* 상태 뱃지 - 우측 상단 */
   .list-row-cell:nth-child(5) {
     position: absolute;
-    top: 16px;
-    right: 48px;
+    bottom: 16px;
+    right: 16px;
     width: auto !important;
   }
 
   /* 아코디언 토글 - 우측 상단 */
   .list-row-cell:nth-child(6) {
     position: absolute;
-    top: 18px;
+    top: 16px;
     right: 16px;
     width: auto !important;
   }
 
   /* 상태 뱃지 크기 조정 */
   .status-badge {
-    font-size: 12px;
-    padding: 4px 10px;
+    font-size: 14px;
+    padding: 6px 20px;
   }
 
   .status-badge .status-icon {
@@ -657,10 +662,6 @@ label[required]::after,
     display: none;
   }
 
-  .accordion-content.active {
-    display: table-row;
-  }
-
   .accordion-content td {
     display: block !important;
     position: relative !important;
@@ -672,13 +673,14 @@ label[required]::after,
 
   /* Q&A 섹션 */
   .qa-label {
-    margin-bottom: 12px;
+    flex-direction: column;
+    align-items: start;
   }
 
   .qa-icon {
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
+    width: 24px;
+    height: 24px;
+    font-size: 13px;
   }
 
   .qa-label-text {
@@ -686,9 +688,9 @@ label[required]::after,
   }
 
   .qa-content {
-    padding-left: 48px;
     font-size: 15px;
     line-height: 1.7;
+    padding-left: 0;
   }
 
   /* 페이지네이션 */
@@ -706,8 +708,14 @@ label[required]::after,
   /* 글쓰기 버튼 */
   .write-btn {
     width: 100%;
-    padding: 14px 24px;
-    font-size: 15px;
+    padding: 16px 20px;
+    font-size: 16px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+    position: fixed;
+    width: auto;
+    right: 12px;
+    bottom: 20px;
+    z-index:10;
   }
 
   /* 비밀번호 모달 */

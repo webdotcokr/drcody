@@ -77,9 +77,8 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                                 <div>
                                     <h3 class="text-base font-bold mb-4 text-gray-900">브랜드소개</h3>
                                     <ul class="space-y-3">
-                                        <li><a href="#" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">브랜드 스토리</a></li>
-                                        <li><a href="#" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">특허기술</a></li>
-                                        <li><a href="#" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">Why 다알코디?</a></li>
+                                        <li><a href="/dc/sub/brandstory.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">브랜드 스토리</a></li>
+                                        <li><a href="/dc/sub/patent.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">특허기술</a></li>
                                     </ul>
                                 </div>
 
@@ -87,11 +86,11 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                                 <div>
                                     <h3 class="text-base font-bold mb-4 text-gray-900">제품구성</h3>
                                     <ul class="space-y-3">
-                                        <li><a href="#" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">세트상품</a></li>
+                                        <li><a href="/dc/sub/세트상품.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">세트상품</a></li>
                                         <li><a href="#" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">개별상품</a></li>
                                         <li><a href="#" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">모듈</a></li>
-                                        <li><a href="#" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">설치 가이드</a></li>
-                                        <li><a href="#" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">컬러갤러리</a></li>
+                                        <li><a href="/dc/sub/설치가이드.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">설치 가이드</a></li>
+                                        <li><a href="/dc/sub/컬러갤러리.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">컬러갤러리</a></li>
                                     </ul>
                                 </div>
 
@@ -99,8 +98,8 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                                 <div>
                                     <h3 class="text-base font-bold mb-4 text-gray-900">견적문의</h3>
                                     <ul class="space-y-3">
-                                        <li><a href="/sub/inquiry.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">견적문의 신청</a></li>
-                                        <li><a href="#" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">견적문의 가이드</a></li>
+                                        <li><a href="/dc/sub/inquiry.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">견적문의 신청</a></li>
+                                        <li><a href="/dc/sub/quote-guide.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">견적문의 가이드</a></li>
                                     </ul>
                                 </div>
 
@@ -109,7 +108,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                                     <h3 class="text-base font-bold mb-4 text-gray-900">제품갤러리</h3>
                                     <ul class="space-y-3">
                                         <li><a href="#" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">고객후기</a></li>
-                                        <li><a href="/sub/제품갤러리.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">시공갤러리</a></li>
+                                        <li><a href="/dc/sub/제품갤러리.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">시공갤러리</a></li>
                                     </ul>
                                 </div>
 
@@ -117,9 +116,9 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                                 <div>
                                     <h3 class="text-base font-bold mb-4 text-gray-900">이전설치</h3>
                                     <ul class="space-y-3">
-                                        <li><a href="#" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">셀프 이전 가이드</a></li>
-                                        <li><a href="#" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">전문가 이전 서비스</a></li>
-                                        <li><a href="#" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">이전설치 신청</a></li>
+                                        <li><a href="/dc/sub/transfer-guide.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">셀프 이전 가이드</a></li>
+                                        <li><a href="/dc/sub/transfer-service.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">전문가 이전 서비스</a></li>
+                                        <li><a href="" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">이전설치 신청</a></li>
                                     </ul>
                                 </div>
 
@@ -127,10 +126,10 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                                 <div>
                                     <h3 class="text-base font-bold mb-4 text-gray-900">고객센터</h3>
                                     <ul class="space-y-3">
-                                        <li><a href="#" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">공지사항</a></li>
-                                        <li><a href="#" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">FAQ</a></li>
-                                        <li><a href="#" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">A/S 신청</a></li>
-                                        <li><a href="#" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">1:1 상담 신청</a></li>
+                                        <li><a href="/dc/sub/notice.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">공지사항</a></li>
+                                        <li><a href="/dc/sub/faq.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">FAQ</a></li>
+                                        <li><a href="/dc/sub/list.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">A/S 신청</a></li>
+                                        <li><a href="" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">1:1 상담 신청</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -233,7 +232,6 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     <nav class="space-y-4">
                         <a href="#" class="block text-sm py-2 hover:text-[#8B6F47] transition">브랜드 스토리</a>
                         <a href="#" class="block text-sm py-2 hover:text-[#8B6F47] transition">특허기술</a>
-                        <a href="#" class="block text-sm py-2 hover:text-[#8B6F47] transition">Why 다알코디?</a>
                     </nav>
                 </div>
 
@@ -306,7 +304,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                         </svg>
                     </div>
                     <nav class="space-y-4">
-                        <a href="#" class="block text-sm py-2 hover:text-[#8B6F47] transition">공지사항</a>
+                        <a href="/dc/sub/notice.php" class="block text-sm py-2 hover:text-[#8B6F47] transition">공지사항</a>
                         <a href="#" class="block text-sm py-2 hover:text-[#8B6F47] transition">FAQ</a>
                         <a href="#" class="block text-sm py-2 hover:text-[#8B6F47] transition">A/S 신청</a>
                         <a href="#" class="block text-sm py-2 hover:text-[#8B6F47] transition">1:1 상담 신청</a>
@@ -322,7 +320,6 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                 <nav class="space-y-4">
                     <a href="#" class="block text-base py-3 border-b hover:text-[#8B6F47] transition">브랜드 스토리</a>
                     <a href="#" class="block text-base py-3 border-b hover:text-[#8B6F47] transition">특허기술</a>
-                    <a href="#" class="block text-base py-3 border-b hover:text-[#8B6F47] transition">Why 다알코디?</a>
                 </nav>
             </div>
 

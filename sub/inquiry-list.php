@@ -1,23 +1,36 @@
 <?php
-include_once('../common.php');  // 공통 설정 불러오기
-add_stylesheet('<link rel="stylesheet" href="'.G5_CSS_URL.'/global.css">', 0);  // 필요 시 CSS 추가
-include_once(G5_PATH.'/head.php');  // 헤더 포함
+include_once('../common.php');
+
+// 게시판 설정 로드
+include_once(__DIR__.'/includes/board-config.php');
+
+// 게시판 타입 설정
+$boardType = 'inquiry';
+$boardConfig = getBoardConfig($boardType);
+$boardData = getBoardData($boardType);
+
+$g5['title'] = $boardConfig['title'];
+add_stylesheet('<link rel="stylesheet" href="'.G5_CSS_URL.'/global.css">', 0);
+include_once(G5_PATH.'/head.php');
 ?>
-<!-- 페이지 컨텐츠 영역 HTML 작성 -->
+
 <main>
+    <!-- 헤더 섹션 -->
     <section class="pt-[160px] pb-[60px] bg-[url(<?php echo G5_THEME_URL?>/img/noticeToparea.webp)] bg-cover">
         <div class="container">
-        breadcrumbs
-            <h1 class="PageTitleText">공지사항</h1>
-            <p class="mt-2 PageSubTitleText font-medium">디알코디 이용 중 궁금한 점이나 불편한 점이 있으신가요? <br/>언제든 문의해주시면 친절하게 도움을 드리겠습니다.</p>
+            <!-- breadcrumbs 추후 추가 -->
+            <h1 class="PageTitleText"><?php echo $boardConfig['title']; ?></h1>
+            <p class="mt-2 PageSubTitleText font-medium"><?php echo $boardConfig['subtitle']; ?></p>
             <div class="mt-12 inline-flex bg-black/30 rounded-full">
-                <a href=""><button class="H6 btn md ">공지사항</button></a>
-                <a href=""><button class="H6 btn md active">FAQ</button></a>
-                <a href=""><button class="H6 btn md">A/S 신청</button></a>
-                <a href=""><button class="H6 btn md">1:1 상담 신청</button></a>
+                <a href="notice.php"><button class="H6 btn md">공지사항</button></a>
+                <a href="faq.php"><button class="H6 btn md">FAQ</button></a>
+                <a href="list.php"><button class="H6 btn md">A/S 신청</button></a>
+                <a href="inquiry-list.php"><button class="H6 btn md active">1:1 상담 신청</button></a>
             </div>
-        </div>    
+        </div>
     </section>
+
+    <!-- 고객센터 섹션 -->
     <section class="py-6 max-md:py-5 bg-[var(--main-brown01)] text-white">
         <div class="container flex items-center justify-between max-md:flex-col max-md:items-stretch">
             <div class="flex items-center gap-3">
@@ -42,27 +55,11 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
                         <p class="H4 font-semibold max-md:text-[17px]">@drcody</p>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
     </section>
-    <section class="py-16 container max-md:py-10">
-        <p class="SectionTitleText font-bold text-center">공지사항</p>
-        <p class="text-base font-medium max-md:text-sm">총 <span class="text-[var(--main-brown01)]">13</span>개의 글</p>
-        <table class="mt-4 w-full H6 border-y border-black">
-            <tr class="h-16 border-b border-gray-200">
-                <th class="w-[10%]">No.</th>
-                <th class="w-[70%]">제목</th>
-                <th class="w-[10%]">등록일</th>
-                <th class="w-[10%]">조회</th>
-            </tr>
-            <tr class="h-16">
-                <td class="w-[10%] text-center text-gray-600 max-md:text-[13px]">No.</td>
-                <td class="w-[70%] font-semibold">제목</td>
-                <td class="w-[10%] text-center text-gray-600 max-md:text-[13px]">등록일</td>
-                <td class="w-[10%] text-center text-gray-600 max-md:text-[13px]">조회</td>
-            </tr>
-        </table>
-    </section>
+
+    <?php include_once(__DIR__.'/includes/board-list-template.php'); ?>
     <section class="py-20 max-md:py-16 flex flex-col gap-4 text-center items-center bg-gray-100">
         <p class="H4 font-bold leading-[1.5] text-[#D4C1B3] max-md:text-[20px]">Customer center</p>
         <div class="flex items-center gap-2">
@@ -85,6 +82,10 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
     </section>
 </main>
 
+<?php include_once(__DIR__.'/includes/password-modal.php'); ?>
+
+<script src="includes/board-scripts.js"></script>
+
 <?php
-include_once(G5_PATH.'/tail.php');  // 푸터 포함
+include_once(G5_PATH.'/tail.php');
 ?>
