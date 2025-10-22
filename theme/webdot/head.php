@@ -128,8 +128,8 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                                     <ul class="space-y-3">
                                         <li><a href="/dc/sub/notice.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">공지사항</a></li>
                                         <li><a href="/dc/sub/faq.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">FAQ</a></li>
-                                        <li><a href="/dc/sub/list.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">A/S 신청</a></li>
-                                        <li><a href="" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">1:1 상담 신청</a></li>
+                                        <li><a href="/dc/sub/as-list.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">A/S 신청</a></li>
+                                        <li><a href="/dc/sub/one-to-one-list.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">1:1 상담 신청</a></li>
                                     </ul>
                                 </div>
                             </div>

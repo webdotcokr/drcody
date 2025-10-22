@@ -42,7 +42,7 @@ $BOARD_CONFIG = [
     // 1:1 상담 게시판
     'inquiry' => [
         'title' => '1:1 상담 신청',
-        'subtitle' => '궁금하신 사항을 남겨주시면 빠르게 답변드리겠습니다.',
+        'subtitle' => '디알코디 이용 중 궁금한 점이나 불편한 점이 있으신가요? <br/>언제든 문의해주시면 친절하게 도움을 드리겠습니다.',
         'write_btn_text' => '1:1 상담 신청하기',
         'write_btn_link' => 'inquiry-write.php',
         'use_password' => true,
@@ -50,16 +50,16 @@ $BOARD_CONFIG = [
         'table_name' => 'inquiry_board',  // DB 테이블명 (DB 연동 시 사용)
     ],
 
-    // 새 게시판을 추가하려면 아래와 같은 형식으로 추가하세요:
-    // 'notice' => [
-    //     'title' => '공지사항',
-    //     'subtitle' => '중요한 공지사항을 확인하세요.',
-    //     'write_btn_text' => '공지 작성',
-    //     'write_btn_link' => 'notice-write.php',
-    //     'use_password' => false,
-    //     'show_status' => false,
-    //     'table_name' => 'notice_board',
-    // ],
+    // 이전 설치 게시판
+    'relocation' => [
+        'title' => '이전 설치 문의',
+        'subtitle' => '전문가의 세심한 손길과 노하우로 새로운 공간에서도 <br/>완벽한 드레스룸을 완성해드립니다',
+        'write_btn_text' => '문의 작성하기',
+        'write_btn_link' => 'notice-write.php',
+        'use_password' => true,
+        'show_status' => true,
+        'table_name' => 'relocation_board',
+    ],
 ];
 
 // ============================================================================
