@@ -38,10 +38,10 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
     </section>
     <section class="py-20 flex flex-col items-center">
         <p class="H4 font-semibold text-[#D4C1B3]">Quotation</p>
-        <h2 class="mt-2 SectionTitleText font-bold text-cetner">디알코디 견적 <br class="hideen"/>쉽게 받는 방법</h2>
+        <h2 class="mt-2 SectionTitleText font-bold text-cetner max-md:text-[32px]">디알코디 견적 <br class="hideen"/>쉽게 받는 방법</h2>
         <div class="mt-16 max-md:mt-8 py-16 px-24 max-md:p-0 flex flex-col justify-center items-center border border-[#E0E0E0] max-md:border-none rounded-xl">
             <img class="m-auto max-md:w-[48px]" src="<?php echo G5_THEME_URL?>/img/moveServiceCheck.svg" alt="">
-            <p class="mt-2 SectionTitleText font-bold">방사이즈 꼭 필요한가요?</p>
+            <p class="mt-2 SectionTitleText font-bold max-md:mt-5">방사이즈 꼭 필요한가요?</p>
             <p class="mt-4 H6 font-semibold text-center">설치할 면적에 따라 선택하는 모듈에 따라 사용되는 기둥과 선반의 개수 등이 달라자기 때문에 <br/>정확한 견적을 위해선 방사이즈가 꼭 필요합니다.</p>
             <img class="rounded-2xl my-10 max-md:my-6 max-md:rounded-none" src="<?php echo G5_THEME_URL?>/img/quoteGuide-1.webp">
             <div class="w-full grid grid-cols-3 gap-12 max-md:w-[calc(100%-40px)] max-md:grid-cols-1 max-md:gap-4">
@@ -138,17 +138,17 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
         <img src="<?php echo G5_THEME_URL?>/img/quoteGuideIcon-5.svg">
             <p class="mt-4 SectionTitleText font-bold">현재 사이즈를 잴 수 없어요!</p>
             <p class="mt-4 H6 font-semibold text-center">아파트평면도와 같은 대략의 사이즈가 필요합니다. <br/>인터넷 검색, 중개 부동산, 아파트 관리사무소 등에서 구할 수 있어요.</p>
-            <div class="flex gap-4 max-md:flex-col ">
+            <div class="mt-10 flex gap-4 max-md:flex-col max-md:gap-5">
                 <div>
-                    <img src="<?php echo G5_THEME_URL?>/img/quoteGuide-8.webp">
-                    <p class="mt-4 H4 font-bold text-center">아파트 평면도</p>
+                    <img class="rounded-2xl border border-gray-300" src="<?php echo G5_THEME_URL?>/img/quoteGuide-8.webp">
+                    <p class="mt-4 H4 font-bold text-center max-md:text-[20px]">아파트 평면도</p>
                 </div>
                 <div>
-                    <img src="<?php echo G5_THEME_URL?>/img/quoteGuide-9.webp">
-                    <p class="mt-4 H4 font-bold text-center">설계도</p>
+                    <img class="rounded-2xl border border-gray-300" src="<?php echo G5_THEME_URL?>/img/quoteGuide-9.webp">
+                    <p class="mt-4 H4 font-bold text-center max-md:text-[20px]">설계도</p>
                 </div>
             </div>
-            <div class="mt-20 max-md:mt-12 flex flex-col items-center">
+            <div class="mt-20 max-md:mt-14 flex flex-col items-center">
                 <p class="H4 font-bold flex items-center gap-2"><span class="p-1.5 py-0 H6 text-white bg-[#A5836A] rounded-md">Check</span>꼭 필요한 서류</p>
                 <p class="mt-3 text-base text-center">안내된 서류는 진행 과정의 기초 자료이므로 <br class="hideen">반드시 제출이 필요합니다. <br/>관리사무소나 부동산에서 확인하실 수 있습니다.</p>
                 <div class="mt-6 flex gap-6 max-md:gap-2">
@@ -163,19 +163,19 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
                     </div>
                     <div>
                         <img class="rounded-md" src="<?php echo G5_THEME_URL?>/img/quoteGuide-12.webp" alt="">
-                        <h4 class="mt-3 flex items-center gap-1 text-base font-bold"><img src="<?php echo G5_THEME_URL?>/img/check.svg" alt="check">아파트 관리사무소</h4>
+                        <h4 class="mt-3 flex items-center gap-1 text-base font-bold"><img src="<?php echo G5_THEME_URL?>/img/check.svg" alt="check"><span class="max-md:hidden">아파트</span> 관리사무소</h4>
                     </div>
                 </div>
             </div>
     </section>
 
-    <section class="py-24 flex flex-col gap-4 text-center text-white items-center bg-[url(<?php echo G5_THEME_URL?>/img/quoteGuideCta.webp)] bg-cover">
+    <section class="py-24 max-md:py-14 flex flex-col gap-4 text-center text-white items-center bg-[url(<?php echo G5_THEME_URL?>/img/quoteGuideCta.webp)] bg-cover">
         <img src="<?php echo G5_THEME_URL?>/img/quoteGuideIcon-6.svg" alt="">
         <p class="text-3xl font-bold leading-[1.5] text-white">현재 견적 문의가 필요해요!</p>
         <p class="H6">당장 사이즈를 재기 어려우신가요? 대략적인 견적이라도 알고 싶으신가요? <br/>아래 문의를 남겨주시면 빠르고 친절하게 안내드립니다.</p>
         <div class="flex gap-4">
             <a href="#" class="mt-4 btn bg-white rounded-full p-2 pr-4 flex items-center gap-1.5 border border-gray-200">
-                <img src="<?php echo G5_THEME_URL?>/img/btn-contacr-icon.png">
+                <img src="<?php echo G5_THEME_URL?>/img/btn-contact-icon.png">
                 <span class="text-base font-semibold text-black">간편 견적 문의</span>
                 <img src="<?php echo G5_THEME_URL?>/img/btn-arrow-right.png">
             </a>
