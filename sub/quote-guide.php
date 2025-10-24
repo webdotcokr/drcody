@@ -44,7 +44,7 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
             <p class="mt-2 SectionTitleText font-bold">방사이즈 꼭 필요한가요?</p>
             <p class="mt-4 H6 font-semibold text-center">설치할 면적에 따라 선택하는 모듈에 따라 사용되는 기둥과 선반의 개수 등이 달라자기 때문에 <br/>정확한 견적을 위해선 방사이즈가 꼭 필요합니다.</p>
             <img class="rounded-2xl my-10 max-md:my-6 max-md:rounded-none" src="<?php echo G5_THEME_URL?>/img/quoteGuide-1.webp">
-            <div class="grid grid-cols-3 gap-12 max-md:w-[calc(100%-40px)] max-md:grid-cols-1 max-md:gap-4">
+            <div class="w-full grid grid-cols-3 gap-12 max-md:w-[calc(100%-40px)] max-md:grid-cols-1 max-md:gap-4">
                 <!-- CARD -->
                 <a href="#">
                     <div class="p-10 max-md:p-4 bg-[#FAFAFA] rounded-xl max-md:rounded-3xl border border-[#E0E0E0] flex items-center justify-between">

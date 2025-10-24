@@ -49,7 +49,7 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
     <section class="py-24 bg-gray-50">
         <div class="container">
         <h2 class="SectionTitleText font-bold text-center">간편한 이전 설치, <br class="md:hidden">4단계로 심플하게</h2>
-            <div class="mt-10 flex max-md:flex-col text-center gap-4">
+            <div class="mt-10 grid grid-cols-4 max-md:flex-col text-center gap-4">
                 <!-- CARD -->
                 <div class="border border-gray-200">
                     <img class="w-full" src="<?php echo G5_THEME_URL?>/img/moveService-5.webp" alt="">
@@ -59,8 +59,6 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
                         <p class="text-base text-gray-800 max-md:text-left">품격 있는 이전을 위한 첫 단계, <br/>홈페이지 또는 <br/>카카오톡 채널을 통해 연락주세요</p>
                     </div>
                 </div>
-                <!-- ARROW -->
-                 <img class="max-md:hidden" src="<?php echo G5_THEME_URL?>/img/moveServiceArrow.svg" alt="process arrow">
                  <!-- CARD -->
                 <div class="border border-gray-200">
                     <img class="w-full" src="<?php echo G5_THEME_URL?>/img/moveService-6.webp" alt="">
@@ -70,8 +68,6 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
                         <p class="text-base text-gray-800 max-md:text-left">이전 예정 공간의 상세 치수와 보유 기둥 구성을 <br/>전달해 주시면, 맞춤형 솔루션으로 <br/>완벽한 이전 계획을 제안해 드립니다</p>
                     </div>
                 </div>
-                <!-- ARROW -->
-                 <img class="max-md:hidden" src="<?php echo G5_THEME_URL?>/img/moveServiceArrow.svg" alt="process arrow">
                  <!-- CARD -->
                 <div class="border border-gray-200">
                     <img class="w-full" src="<?php echo G5_THEME_URL?>/img/moveService-7.webp" alt="">
@@ -81,8 +77,6 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
                         <p class="text-base text-gray-800 max-md:text-left">고객님의 일정에 맞추어 방문일을 조율해 드리며, 원활한 진행을 위해 의류만 미리 정돈해 주시면 감사하겠습니다</p>
                     </div>
                 </div>
-                <!-- ARROW -->
-                 <img class="max-md:hidden" src="<?php echo G5_THEME_URL?>/img/moveServiceArrow.svg" alt="process arrow">
                  <!-- CARD -->
                 <div class="border border-gray-200">
                     <img class="w-full" src="<?php echo G5_THEME_URL?>/img/moveService-8.webp" alt="">
@@ -127,18 +121,18 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
             <div class="py-12 px-6 flex flex-col items-center text-center border border-gray-300">
                 <h3 class="px-5 py-1.5 H5 font-bold bg-[var(--main-brown01)] text-white rounded-full">작업 전 준비</h3>
                 <div class="h-full mt-6 H6 flex flex-col items-center justify-center gap-2">
-                    <h4 class="flex items-center gap-2"><img src="<?php echo G5_THEME_URL?>/img/moveServiceMiniCheck.svg" alt="check-icon">드레스룸 내 모든 의류 및 소품 정리</h4>
-                    <h4 class="flex items-center gap-2"><img src="<?php echo G5_THEME_URL?>/img/moveServiceMiniCheck.svg" alt="check-icon">기존 설치 위치에서 새 설치 위치까지 이동 경로 확보</h4>
-                    <h4 class="flex items-center gap-2"><img src="<?php echo G5_THEME_URL?>/img/moveServiceMiniCheck.svg" alt="check-icon">엘리베이터 사용 가능 시간 확인 (아파트의 경우)</h4>
-                    <h4 class="flex items-center gap-2"><img src="<?php echo G5_THEME_URL?>/img/moveServiceMiniCheck.svg" alt="check-icon">주차 공간 확보 (작업차량용)</h4>
+                    <h4 class="flex items-center gap-2"><img src="<?php echo G5_THEME_URL?>/img/check-icon.svg" alt="check-icon">드레스룸 내 모든 의류 및 소품 정리</h4>
+                    <h4 class="flex items-center gap-2"><img src="<?php echo G5_THEME_URL?>/img/check-icon.svg" alt="check-icon">기존 설치 위치에서 새 설치 위치까지 이동 경로 확보</h4>
+                    <h4 class="flex items-center gap-2"><img src="<?php echo G5_THEME_URL?>/img/check-icon.svg" alt="check-icon">엘리베이터 사용 가능 시간 확인 (아파트의 경우)</h4>
+                    <h4 class="flex items-center gap-2"><img src="<?php echo G5_THEME_URL?>/img/check-icon.svg" alt="check-icon">주차 공간 확보 (작업차량용)</h4>
                 </div>
             </div>
             <div class="py-12 px-6 flex flex-col items-center text-center border border-gray-300">
                 <h3 class="px-5 py-1.5 H5 font-bold bg-[var(--main-brown01)] text-white rounded-full">새 설치 공간 준비</h3>
                 <div class="h-full mt-6 H6 flex flex-col items-center justify-center gap-2">
-                    <h4 class="flex items-center gap-2"><img src="<?php echo G5_THEME_URL?>/img/moveServiceMiniCheck.svg" alt="check-icon">천장 높이 2.3m-2.7m 범위 확인</h4>
-                    <h4 class="flex items-center gap-2"><img src="<?php echo G5_THEME_URL?>/img/moveServiceMiniCheck.svg" alt="check-icon">바닥과 천장이 수평인지 확인</h4>
-                    <h4 class="flex items-center gap-2"><img src="<?php echo G5_THEME_URL?>/img/moveServiceMiniCheck.svg" alt="check-icon">설치 공간 청소 완료</h4>
+                    <h4 class="flex items-center gap-2"><img src="<?php echo G5_THEME_URL?>/img/check-icon.svg" alt="check-icon">천장 높이 2.3m-2.7m 범위 확인</h4>
+                    <h4 class="flex items-center gap-2"><img src="<?php echo G5_THEME_URL?>/img/check-icon.svg" alt="check-icon">바닥과 천장이 수평인지 확인</h4>
+                    <h4 class="flex items-center gap-2"><img src="<?php echo G5_THEME_URL?>/img/check-icon.svg" alt="check-icon">설치 공간 청소 완료</h4>
                 </div>
             </div>
         </div>
@@ -196,7 +190,7 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
         <h2 class="SectionTitleText font-bold text-center">이전 설치 비용 매뉴얼, <br class="md:hidden"/>투명하고 합리적입니다</h2>
         <p class="mt-6 H6">간결한 구조로 이삿짐 센터에서도 가능하지만, <br/>저희 전문가의 정교한 이전 설치는 새 공간에서도 완벽한 드레스룸을 선사합니다.</p>
         <!-- CONTAINER -->
-        <p class="mt-12 flex items-center gap-2 H5 font-bold text-[var(--main-brown01)]"><img class="w-7" src="<?php echo G5_THEME_URL?>/img/moveServiceCheck.svg" alt="check-icon">심플한 계산법, 기둥 수로 파악하세요.</p>
+        <p class="mt-12 flex justify-center items-center gap-2 H5 font-bold text-[var(--main-brown01)]"><img class="w-7" src="<?php echo G5_THEME_URL?>/img/moveServiceCheck.svg" alt="check-icon">심플한 계산법, 기둥 수로 파악하세요.</p>
         <div class="mt-8 grid grid-cols-3 gap-10 max-md:grid-cols-1 max-md:gap-4">
             <!-- CARD -->
             <div class="p-12 max-md:p-8 border border-gray-300">
@@ -267,7 +261,7 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
         </div>
     </section>
 
-    <section class="py-24 flex flex-col gap-4 text-center text-white items-center bg-[url(<?php echo G5_THEME_URL?>/img/guideCta.webp)] bg-cover">
+    <section class="py-24 flex flex-col gap-4 text-center text-white items-center bg-[url(<?php echo G5_THEME_URL?>/img/transferCta.webp)] bg-cover">
         <p class="H3 font-bold leading-[1.5] text-white">새로운 공간에서의 품격 있는 시작, <br/>디알코디가 완성해 드리겠습니다 <br/>소중한 문의를 기다립니다</p>
         <div class="flex gap-3 max-md:flex-col">
             <div class="flex flex-col items-start px-8 py-6 text-left bg-[black/60] border border-[#565254]">
