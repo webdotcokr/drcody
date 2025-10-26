@@ -40,6 +40,10 @@ a {
 .btn.sub:hover {
   background: var(--main-brown01);
 }
+.btn.deactive {
+  background: #eee;
+  color: #616161;
+}
 
 .btn.md {
     padding: 16px 24px;
@@ -73,18 +77,35 @@ label[required]::after,
     margin-left: 4px;
 }
 
+form {
+  padding: 32px 0;
+  border-top: 1px solid #000;
+  border-left: none;
+  border-right: none;
+}
+
+/* Form Row - 공통 래퍼 (border, padding 관리) */
+.form-row {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.form-row:last-child {
+  border-bottom: 1px solid #000;
+}
+
 /* Form Field Layout - label 좌측, input 우측 */
 .form-field {
     display: grid;
     grid-template-columns: 120px 1fr;
     gap: 24px;
-    align-items: start;
-    margin-bottom: 24px;
+    align-items: center;
 }
 
-.form-field .field-label {
+/* .form-field .field-label {
     padding-top: 12px;
-}
+} */
 
 .form-field .field-input {
     display: flex;
@@ -96,7 +117,7 @@ label[required]::after,
 .form-field-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 40px;
 }
 
 /* Form Input Styles */
@@ -141,6 +162,13 @@ label[required]::after,
     justify-content: center;
     margin-top: 40px;
 }
+.form-buttons .btn {
+  padding: 16px 38px;
+}
+.form-buttons .btn {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
@@ -161,7 +189,7 @@ label[required]::after,
   .SectionTitleText { font-size: 24px; }
   .BannerTitleText { font-size: 26px; }
 
-.H1 {font-size: 48px; line-height: 1.2;}
+.H1 {font-size: 32px; line-height: 1.2;}
 .H2 {font-size: 36px; line-height: 1.2;}
 .H3 {font-size: 24px; line-height: 1.4;}
 .H4 {font-size: 24px; line-height: 1.2;}
@@ -169,10 +197,14 @@ label[required]::after,
 .H6 {font-size: 15px; line-height: 1.6; }
 
   /* Form Layout - 모바일에서는 세로 배치 */
+  .form-row {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+
   .form-field {
     grid-template-columns: 1fr;
     gap: 8px;
-    margin-bottom: 16px;
   }
 
   .form-field .field-label {
@@ -192,6 +224,9 @@ label[required]::after,
 
   .form-buttons {
     margin-top: 24px;
+    gap: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 

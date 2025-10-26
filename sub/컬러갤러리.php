@@ -38,9 +38,9 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
     </section>
 
     <section class="py-20 container">
-        <h2 class="H2 font-bold text-center">선반 색상 옵션</h2>
+        <h2 class="H2 max-md:text-[32px] font-bold text-center">선반 색상 옵션</h2>
         <p class="mt-5 text-base text-gray-500 text-center">* 제품 색상은 화면 해상도에 따라 실제와 차이가 있을 수 있습니다.</p>
-        <div class="mt-8 flex gap-8 itmes-center">
+        <div class="mt-8 flex gap-8 itmes-center max-md:flex-col">
             <img src="<?php echo G5_THEME_URL?>/img/colorGallery-1.webp">
             <div class="flex flex-col justify-around">
                 <div>
@@ -55,9 +55,9 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
         </div>
     </section>
     <section class="py-20 border-y border-gray-200 container">
-        <h2 class="H2 font-bold text-center">기둥 색상 옵션</h2>
+        <h2 class="H2 max-md:text-[32px] font-bold text-center">기둥 색상 옵션</h2>
         <p class="mt-5 H6 font-medium text-center">마감재와 조화를 이루는 완벽한 기둥 선택</p>
-        <div class="mt-8 grid grid-cols-2 gap-8">
+        <div class="mt-8 grid grid-cols-2 max-md:grid-cols-1 gap-8 max-md:gap-10">
             <!-- CARD -->
             <div class="flex flex-col gap-3">
                 <img src="<?php echo G5_THEME_URL?>/img/colorGallery-2.webp" alt="">
@@ -76,9 +76,9 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
     </section>
 
     <section class="py-32 bg-gray-50">
-        <h2 class="H2 font-bold text-center">스마트 컬러 선택 가이드</h2>
+        <h2 class="SectionTitleText font-bold text-center">스마트 컬러 선택 가이드</h2>
         <h3 class="mt-5 H5 font-semibold text-[var(--main-brown01)] text-center">3단계로 현명하게 선택하기</h3>
-        <div class="mt-10 container grid grid-cols-3 gap-4">
+        <div class="mt-10 max-md:mt-4 container grid grid-cols-3 max-md:grid-cols-1 gap-4">
             <!-- CARD -->
             <div class="p-8 bg-white border border-gray-300 rounded-xl">
                 <h4 class="H4 font-bold text-[var(--main-brown01)]"><span class="H2 text-[var(--main-brown02)]">1</span>단계</h4>
@@ -168,19 +168,19 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
             </div>
         </div>
     </section>
-    <section class="container py-26">
+    <section class="container py-24">
         <h2 class="H2 font-bold text-center">구매 전 체크리스트</h2>
-        <div class="mt-8 flex items-center justify-between">
+        <div class="mt-8 flex max-md:flex-col items-center justify-between">
             <div class="flex flex-col items-center gap-5">
                 <img src="<?php echo G5_THEME_URL?>/img/colorGalleryIcon-1.svg" alt="icon">
                 <h3 class="H6 font-semibold text-center">웹사이트 제품갤러리 참고 <br/>혹은 쇼룸 방문하여 확인하기</h3>
             </div>
-            <div class="w-[1px] h-[90px] bg-gray-300"></div>
+            <div class="w-[1px] h-[90px] max-md:w-[95%] max-md:h-[1px] bg-gray-300"></div>
             <div class="flex flex-col items-center gap-5">
                 <img src="<?php echo G5_THEME_URL?>/img/colorGalleryIcon-2.svg" alt="icon">
                 <h3 class="H6 font-semibold text-center">기존 바닥재와의 <br/>조화&대비 선택하기</h3>
             </div>
-            <div class="w-[1px] h-[90px] bg-gray-300"></div>
+            <div class="w-[1px] h-[90px] max-md:w-[95%] max-md:h-[1px] bg-gray-300"></div>
             <div class="flex flex-col items-center gap-5">
                 <img src="<?php echo G5_THEME_URL?>/img/colorGalleryIcon-3.svg" alt="icon">
                 <h3 class="H6 font-semibold text-center">향후 이사나 리모델링 <br/>계획 고려하기</h3>

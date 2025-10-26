@@ -39,7 +39,7 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
     </section>
     <section class="py-20 flex flex-col items-center">
         <h2 class="SectionTitleText font-bold"">쉽게 따라하는 셀프 이전</h2>
-        <p class="mt-4 H6 font-medium text-center">디알코디를 선택한 가장 큰 이유, 바로 '이사할 때 가져갈 수 있다'는 약속을 현실로 만들 시간입니다. <br/>드라이버 하나만 준비하세요. 나머지는 저희가 영상으로 완벽하게 안내해 드립니다.</p>
+        <p class="mt-4 H6 font-medium text-center">디알코디를 선택한 가장 큰 이유, <br class="md:hidden">바로 '이사할 때 가져갈 수 있다'는 약속을 현실로 만들 시간입니다. <br/>드라이버 하나만 준비하세요. 나머지는 저희가 영상으로 완벽하게 안내해 드립니다.</p>
         <video></video>
     </section>
     <section class="bg-gray-50">
@@ -194,7 +194,7 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
         </div>
     </section>
     <section class="py-12 container flex flex-col items-center">
-        <div class="pt-16 w-[890px] bg-[url(<?php echo G5_THEME_URL?>/img/bomb.webp)] text-center">
+        <div class="pt-16 max-w-[100%] w-[890px] bg-[url(<?php echo G5_THEME_URL?>/img/bomb.webp)] text-center">
             <img class="m-auto mb-4" src="<?php echo G5_THEME_URL?>/img/check-gray.svg" alt="">
             <p class="SectionTitleText font-bold">축하합니다!</p>
             <h3 class="mt-2 PageSubTitleText font-medium">디알코디와 함께 성공적인 셀프 이전을 완료하셨습니다.</h3>

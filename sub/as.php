@@ -1,7 +1,6 @@
 <?php
 header('Content-Type: text/html; charset=utf-8');
 include_once('../common.php');
-$g5['title'] = "A/S 신청";
 add_stylesheet('<link rel="stylesheet" href="'.G5_CSS_URL.'/global.css">', 0);
 include_once(G5_PATH.'/head.php');
 ?>
@@ -14,87 +13,88 @@ include_once(G5_PATH.'/head.php');
             <span>홈</span> / <span>고객센터</span> / <span class="text-gray-900 font-semibold">A/S 신청</span>
         </div>
         <h1 class="PageTitleText font-bold">A/S 신청</h1>
-        <p class="mt-4 text-gray-700">
-            다얌코디 이용 중 궁금한 점이나 불편한 점이 있으신가요?<br>
-            언제든 문의해주시면 친절하게 도움을 드리겠습니다.
+        <p class="mt-4 PageSubTitleText text-gray-700">
+            궁금한 점이나 불편한 점이 있으신가요?<br>언제든 문의해주시면 친절하게 도움을 드리겠습니다.
         </p>
     </div>
 
     <!-- 폼 섹션 -->
-    <section class="py-12 md:py-8">
+    <section class="py-12 md:py-8 max-md:pt-0">
         <div class="container mx-auto px-4">
-            <form action="" method="post" class="max-w-4xl mx-auto">
+            <form action="" method="post" class="mx-auto">
 
                 <!-- 탭 메뉴 -->
-                <div class="border-b-2 border-gray-200 mb-8">
-                    <div class="flex gap-8 md:gap-4">
-                        <button type="button" class="pb-4 px-2 text-lg md:text-base font-semibold text-gray-400 border-b-2 border-transparent hover:text-gray-900">
-                            상담
-                        </button>
-                        <button type="button" class="pb-4 px-2 text-lg md:text-base font-semibold text-gray-900 border-b-2 border-[var(--main-brown02)]">
-                            A/S 신청
-                        </button>
+                <div class="form-row form-field items-end">
+                    <label class="field-label H5 font-semibold">상담</label>
+                    <div class="field-input">
+                        <p class="text-[20px] font-semibold max-md:text-[17px]">A/S 신청</p>
                     </div>
                 </div>
 
-                <!-- 이름 -->
-                <div class="form-field">
-                    <label class="field-label H5 font-semibold" required>이름</label>
-                    <div class="field-input">
-                        <input
-                            type="text"
-                            name="name"
-                            required
-                            placeholder="이름을 입력해주세요"
-                            class="form-input"
-                        />
+                <!-- 이름 + 연락처 (PC: 2열 그리드) -->
+                <div class="form-row form-field-grid">
+                    <!-- 이름 -->
+                    <div class="form-field">
+                        <label class="field-label H5 font-semibold" required>이름</label>
+                        <div class="field-input">
+                            <input
+                                type="text"
+                                name="name"
+                                required
+                                placeholder="이름을 입력해주세요"
+                                class="form-input"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- 연락처 -->
+                    <div class="form-field">
+                        <label class="field-label H5 font-semibold" required>연락처</label>
+                        <div class="field-input">
+                            <input
+                                type="tel"
+                                name="phone"
+                                required
+                                placeholder="연락처를 입력해주세요"
+                                class="form-input"
+                            />
+                        </div>
                     </div>
                 </div>
 
-                <!-- 연락처 -->
-                <div class="form-field">
-                    <label class="field-label H5 font-semibold" required>연락처</label>
-                    <div class="field-input">
-                        <input
-                            type="tel"
-                            name="phone"
-                            required
-                            placeholder="연락처를 입력해주세요"
-                            class="form-input"
-                        />
+                <!-- 사용요청일 + A/S부위 (PC: 2열 그리드) -->
+                <div class="form-row form-field-grid">
+                    <!-- 사용요청일 -->
+                    <div class="form-field">
+                        <label class="field-label H5 font-semibold" required>사용요청일</label>
+                        <div class="field-input">
+                            <input
+                                type="date"
+                                name="request_date"
+                                required
+                                placeholder="날짜를 선택하세요"
+                                class="form-input"
+                            />
+                        </div>
                     </div>
-                </div>
 
-                <!-- 사용요청일 -->
-                <div class="form-field">
-                    <label class="field-label H5 font-semibold" required>사용요청일</label>
-                    <div class="field-input">
-                        <input
-                            type="date"
-                            name="request_date"
-                            required
-                            placeholder="날짜를 선택하세요"
-                            class="form-input"
-                        />
-                    </div>
-                </div>
-
-                <!-- A/S부위 -->
-                <div class="form-field">
-                    <label class="field-label H5 font-semibold" required>A/S부위</label>
-                    <div class="field-input">
-                        <input
-                            type="text"
-                            name="as_location"
-                            required
-                            placeholder="A/S가 필요한 부위를 입력해주세요"
-                            class="form-input"
-                        />
+                    <!-- A/S부위 -->
+                    <div class="form-field">
+                        <label class="field-label H5 font-semibold" required>A/S부위</label>
+                        <div class="field-input">
+                            <input
+                                type="text"
+                                name="as_location"
+                                required
+                                placeholder="A/S가 필요한 부위를 입력해주세요"
+                                class="form-input"
+                            />
+                        </div>
                     </div>
                 </div>
 
                 <!-- 해제 주소 -->
-                <div class="form-field">
+                <div class="form-row form-field">
                     <label class="field-label H5 font-semibold" required>해제 주소</label>
                     <div class="field-input">
                         <div class="flex gap-2">
@@ -125,7 +125,7 @@ include_once(G5_PATH.'/head.php');
                 </div>
 
                 <!-- 내용 -->
-                <div class="form-field">
+                <div class="form-row form-field">
                     <label class="field-label H5 font-semibold">내용</label>
                     <div class="field-input">
                         <textarea
@@ -138,7 +138,7 @@ include_once(G5_PATH.'/head.php');
                 </div>
 
                 <!-- 상담사 -->
-                <div class="form-field">
+                <div class="form-row form-field">
                     <label class="field-label H5 font-semibold" required>상담사</label>
                     <div class="field-input">
                         <input
@@ -148,13 +148,13 @@ include_once(G5_PATH.'/head.php');
                             placeholder="상담사의 이름을 입력해주세요"
                             class="form-input"
                         />
-                        <p class="form-helper">※ 상담사를 모르실 경우, 고객센터 성함을 입력해주세요.</p>
+                        <p class="form-helper">※ 상담사를 모르실 경우, 고객님의 성함을 입력해주세요.</p>
                     </div>
                 </div>
 
                 <!-- 제출 버튼 -->
                 <div class="form-buttons">
-                    <button type="button" onclick="history.back()" class="btn default">
+                    <button type="button" onclick="history.back()" class="btn deactive">
                         취소
                     </button>
                     <button type="submit" class="btn sub">
