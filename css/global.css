@@ -151,7 +151,7 @@ form {
 /* Form Helper Text */
 .form-helper {
     font-size: 14px;
-    color: #6b7280;
+    color: var(--main-brown02);
     margin-top: 4px;
 }
 

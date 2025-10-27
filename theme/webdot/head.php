@@ -118,7 +118,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                                     <ul class="space-y-3">
                                         <li><a href="/dc/sub/transfer-guide.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">셀프 이전 가이드</a></li>
                                         <li><a href="/dc/sub/transfer-service.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">전문가 이전 서비스</a></li>
-                                        <li><a href="" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">이전설치 신청</a></li>
+                                        <li><a href="/dc/sub/relocation-list.php" class="text-sm text-gray-600 hover:text-[#8B6F47] transition block">이전설치 신청</a></li>
                                     </ul>
                                 </div>
 

@@ -1,6 +1,5 @@
 <?php
 include_once('../common.php');  // 공통 설정 불러오기
-$g5['title'] = "서브페이지 제목";  // 페이지 제목 설정
 add_stylesheet('<link rel="stylesheet" href="'.G5_CSS_URL.'/global.css">', 0);  // 필요 시 CSS 추가
 include_once(G5_PATH.'/head.php');  // 헤더 포함
 ?>
@@ -18,7 +17,7 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
             </div>
         </div>    
     </section>
-    <section class="py-24 bg-[#F7F2EE] flex flex-col text-center items-center gap-12">
+    <section class="py-24 max-md:py-16 container bg-[#F7F2EE] flex flex-col text-center items-center gap-12">
         <p class="H5 font-medium text-[var(--main-brown01)]">왜 기존 드레스룸은 벽을 상하게 하고, 이사 갈 땐 버려야만 했을까요?<br/> 우리는 드레스룸의 오랜 딜레마에 주목했습니다.<br/> 견고함을 위해 소중한 우리 집에 구멍을 뚫거나,<br/> 편의성을 위해 불안정한 흔들림을 감수해야 하는 문제.</p>
         <div class="flex flex-col items-center gap-8">
             <img src="<?php echo G5_THEME_URL?>/img/patent-tit-1.svg">
@@ -27,34 +26,58 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
         </div>
         <p class="H5 font-bold text-[var(--main-brown01)]">디알코디의 혁신은 <br/>바로 이 질문에서 시작되었습니다.</p>
     </section>
-    <section class="container py-32">
+    <section class="container py-32 max-md:py-24">
         <h2 class="SectionTitleText font-bold text-center">10년 연구로 완성한 혁신, <br/>디알코디 기술의 3가지 핵심 원리</h2>
-        <div class="mt-16">
-            <div class="flex gap-12 items-center max-md:flex-col">
+        <div class="mt-16 max-md:mt-8 flex flex-col gap-32 max-md:gap-14">
+            <!-- CARD -->
+            <div class="flex gap-12 items-center max-md:flex-col max-md:gap-5">
                 <img src="<?php echo G5_THEME_URL?>/img/patent-1.webp">
                 <div class="max-md:text-center">
                     <h3 class="H5 font-bold text-[var(--main-brown01)]">원리 1</h3>
-                    <h4 class="mt-2 H3 font-bold">어떤 공간에도 완벽하게, <br/>450mm 익스텐션 기둥</h4>
-                    <p class="mt-8 H6">천장 높이가 바뀌어도, 드레스룸은 그대로 기본 2,230mm에서 최대 2,680mm까지. 
+                    <h4 class="mt-2 H3 max-md:text-[20px] font-bold">어떤 공간에도 완벽하게, <br/>450mm 익스텐션 기둥</h4>
+                    <p class="mt-8 max-md:mt-3 H6">천장 높이가 바뀌어도, 드레스룸은 그대로 기본 2,230mm에서 최대 2,680mm까지. 
 디알코디의 익스텐션 기둥은 무려 최대 450mm의 압도적인 조절 범위를 제공합니다. 
 지금 사는 아파트의 높은 천장부터, 나중에 이사 갈 주택의 조금 낮은 천장까지. 어떤 공간에서도 맞춤처럼 설치하고, 
 평생 당신의 옷들을 책임집니다.</p>
                 </div>
             </div>
+            <!-- CARD -->
+            <div class="flex gap-12 items-center max-md:flex-col max-md:gap-5">
+                <img src="<?php echo G5_THEME_URL?>/img/patent-2.webp">
+                <div class="max-md:text-center">
+                    <h3 class="H5 font-bold text-[var(--main-brown01)]">원리 2</h3>
+                    <h4 class="mt-2 H3 max-md:text-[20px] font-bold">흔들림 없는 견고함의 비밀, <br/>알루미늄 프로파일</h4>
+                    <p class="mt-8 max-md:mt-3 H6">무게는 가볍게, 지지력은 강력하게 드레스룸의 핵심은 '지지력'입니다. 
+디알코디는 항공기 소재로도 사용되는 고강도 알루미늄에 주목했습니다. 
+정밀하게 설계된 양쪽 홈 구조의 특허받은 알루미늄 프로파일은, 무거운 겨울 코트를 가득 걸어도 휘거나 흔들리지 않는
+압도적인 안정성을 제공합니다.</p>
+                </div>
+            </div>
+            <!-- CARD -->
+            <div class="flex gap-12 items-center max-md:flex-col max-md:gap-5">
+                <img src="<?php echo G5_THEME_URL?>/img/patent-3.webp">
+                <div class="max-md:text-center">
+                    <h3 class="H5 font-bold text-[var(--main-brown01)]">원리 3</h3>
+                    <h4 class="mt-2 H3 max-md:text-[20px] font-bold">디테일이 만드는 품질, <br/>정밀 부품과 공정</h4>
+                    <p class="mt-8 max-md:mt-3 H6">보이지 않는 곳까지 완벽을 추구합니다
+명품은 보이지 않는 곳에서 결정됩니다. 디알코디의 모든 부품은 자체 공장에서 숙련된 전문가의 손을 거쳐 정밀하게 제작됩니다.
+선반을 고정하는 작은 브라켓 하나, 기둥 내부의 장력을 책임지는 스프링 하나의 차이가 결국 10년의 만족을 만듭니다.</p>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="py-32 bg-gray-50 flex flex-col text-center items-center">
+    <section class="py-32 max-md:py-16 bg-gray-50 flex flex-col text-center items-center">
         <h2 class="SectionTitleText font-bold">내 공간에는 어떻게 적용될까요?</h2>
-        <h3 class="mt-4 H4 font-semibold">전문가가 당신의 공간에 꼭 맞는 드레스룸을 3D로 미리 보여드립니다.</h3>
-        <div class="my-12 flex gap-3">
-            <img src="<?php echo G5_THEME_URL?>/img/patent-4.webp">
-            <img src="<?php echo G5_THEME_URL?>/img/patent-5.webp">
-            <img src="<?php echo G5_THEME_URL?>/img/patent-6.webp">
+        <h3 class="mt-4 H4 max-md:text-[20px] font-semibold">전문가가 당신의 공간에 꼭 맞는 드레스룸을 3D로 미리 보여드립니다.</h3>
+        <div class="my-12 max-md:my-8 flex gap-3">
+            <img class="w-auto" src="<?php echo G5_THEME_URL?>/img/patent-4.webp">
+            <img class="w-auto" src="<?php echo G5_THEME_URL?>/img/patent-5.webp">
+            <img class="w-auto max-md:hidden" src="<?php echo G5_THEME_URL?>/img/patent-6.webp">
         </div>
         <a class="btn sub" href="">무료 3D 설계도 무료 받기</a>
     </section>
-    <section class="container py-24 grid grid-cols-2 gap-16">
-        <div>
+    <section class="container py-24 grid grid-cols-2 max-md:grid-cols-1 gap-16 max-md:gap-8">
+        <div class="max-md:text-center">
             <p class="SectionTitleText font-bold">이 모든 기술이 당신의 공간에서 <br/>이렇게 구현됩니다</p>
             <p class="mt-6 H6">디알코디의 기술력은 실험실의 데이터가 아닌, 바로 당신의 집에서 그 가치를 증명합니다.
             디알코디 전문 시공팀이 방문하여 소중한 벽과 바닥에 단 하나의 흠집도 없이, 
@@ -66,12 +89,12 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
             <img src="<?php echo G5_THEME_URL?>/img/patent-8.webp">
         </div>
     </section>
-    <section class="py-32 bg-gray-50">
+    <section class="py-32 max-md:py-16 bg-gray-50">
         <div class="container">
             <div>
                 <h2 class="SectionTitleText font-bold text-center">디알코디의 기술력은 <br/>법적으로 보호받는 자부심입니다</h2>
                 <p class="mt-6 H6 text-center">디알코디의 무타공 익스텐션 기둥과 핵심 부품들은 모방할 수 없는 독창적인 기술입니다. <br/>대한민국 특허청으로부터 발명특허와 디자인 등록을 통해<br/>그 독창성과 기술력을 공식적으로 인정받았습니다. <br/>당신이 경험하는 혁신은 법적으로 보호받는 디알코디의 자부심 그 자체입니다.</p>
-                <div class="mt-8 flex gap-6">
+                <div class="mt-8 grid grid-cols-4 max-md:grid-cols-2 gap-6 max-md:gap-4">
                     <div class="text-center bg-white rounded-xl pb-10">
                         <img class="m-auto" src="<?php echo G5_THEME_URL?>/img/patent-9.webp" alt="">
                         <h3 class="H5 font-bold">발명특허</h3>
@@ -98,7 +121,7 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
                 <img src="<?php echo G5_THEME_URL?>/img/patent-11.webp">
                 <h2 class="SectionTitleText font-bold">공식 인증 완료</h2>
                 <h3 class="H5 font-bold">대한민국 특허청 공식 등록</h3>
-                <div class="mt-4 flex gap-4">
+                <div class="mt-4 flex gap-4 max-md:grid grid-cols-2">
                     <div>
                         <img class="mb-4 rounded-lg" src="<?php echo G5_THEME_URL?>/img/patent-12.webp">
                         <h4 class="text-gray-600 font-semibold">특허 <span class="text-black">제 10-1707647호</span></h4>

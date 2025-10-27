@@ -1,6 +1,5 @@
 <?php
 include_once('../common.php');
-$g5['title'] = "견적문의 신청";
 add_stylesheet('<link rel="stylesheet" href="'.G5_CSS_URL.'/global.css">', 0);
 include_once(G5_PATH.'/head.php');
 ?>
@@ -65,7 +64,7 @@ include_once(G5_PATH.'/head.php');
                 <div class="form-field">
                     <label class="field-label H5 font-semibold">그림 첨부</label>
                     <div class="field-input">
-                        <p class="text-gray-700 text-base mb-4">간단한 스케치를 첨부해주세요.</p>
+                        <p class="text-gray-700 text-base mb-2">간단한 손그림을 첨부해주세요.</p>
 
                         <!-- 스케치 안내 이미지 -->
                         <div class="bg-white border border-gray-200 p-8 md:p-4 rounded-md">
@@ -143,9 +142,9 @@ include_once(G5_PATH.'/head.php');
             <!-- 윤곽 선택 섹션 -->
             <div class="mt-10 md:mt-8 pt-10 md:pt-8 border-t border-gray-200">
                 <div class="form-field">
-                    <label class="field-label H5 font-semibold">윤곽 선택</label>
+                    <label class="field-label H5 font-semibold">옵션 선택</label>
                     <div class="field-input">
-                        <p class="text-gray-600 text-sm">그림 원산지 이상의 경우 이에 해당 내용을 입력해주세요.</p>
+                        <p class="text-gray-600 text-sm">그림 첨부가 어려우신 경우 아래 내용을 입력해주세요.</p>
 
                         <!-- 윤곽 다이어그램 -->
                         <div class="bg-gray-50 p-8 md:p-4 rounded-md">
