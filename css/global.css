@@ -3,7 +3,7 @@
     --main-brown02: #584439;
     --main-brown03: #201E1F;
     --main-yellow: #F6BC50;
-
+    --bg-beige: #F7F2EE;
 }
 /* Global Font Family */
 * {
@@ -765,5 +765,30 @@ form {
 
   .password-modal-desc {
     font-size: 13px;
+  }
+}
+
+/* Review Steps Arrow */
+.review-step {
+  position: relative;
+}
+
+.review-step::after {
+  content: '';
+  position: absolute;
+  right: -24px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('../theme/webdot/img/arrow-yellow.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .review-step::after {
+    display: none;
   }
 }

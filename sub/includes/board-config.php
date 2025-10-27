@@ -60,6 +60,17 @@ $BOARD_CONFIG = [
         'show_status' => true,
         'table_name' => 'relocation_board',
     ],
+
+    // 견적문의신청
+    'quote' => [
+        'title' => '견적문의 신청',
+        'subtitle' => '전문가의 세심한 손길과 노하우로 새로운 공간에서도 <br/>완벽한 드레스룸을 완성해드립니다',
+        'write_btn_text' => '문의 작성하기',
+        'write_btn_link' => 'relocation.php',
+        'use_password' => true,
+        'show_status' => true,
+        'table_name' => 'relocation_board',
+    ],
 ];
 
 // ============================================================================
