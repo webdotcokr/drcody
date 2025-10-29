@@ -61,12 +61,42 @@ include_once(G5_THEME_PATH.'/head.php');
         <img class="mt-4 text-center" src="<?php echo G5_THEME_URL ?>/img/arrow-down-1.png">
         <p class="MainSectionTitleENG">DRCODY solution</p>
         <h2 class="MainSectionTitle text-center mt-4">당신의 가장 큰 고민, <br/>디알코디는 이렇게 해결합니다</h2>
-        <p class="text-2xl font-medium mt-4">10년간 6만 건의 상담으로 찾아낸 핵심 솔루션</p>
+        <p class="H4 max-md:text-[20px] font-medium mt-4">10년간 6만 건의 상담으로 찾아낸 핵심 솔루션</p>
+        <div class="max-md:mt-8 grid grid-cols-4 max-md:grid-cols-2 gap-16 max-md:gap-x-6 max-md:gap-y-10">
+            <!-- CARD -->
+            <div class="text-center">
+                <img src="<?php echo G5_THEME_URL?>/img/index_solution-1.webp" alt="">
+                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown01)] font-bold">Solution</p>
+                <h3 class="mt-5 max-md:mt-2 H4 max-md:text-[20px] font-bold">특허 무타공 기술</h3>
+                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown03)]">벽에 못 박지 않는 특허 기술로 <br/>원상복구 100%</p>
+            </div>
+            <!-- CARD -->
+            <div class="md:mt-16 text-center">
+                <img src="<?php echo G5_THEME_URL?>/img/index_solution-2.webp" alt="">
+                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown01)] font-bold">Solution</p>
+                <h3 class="mt-5 max-md:mt-2 H4 max-md:text-[20px] font-bold">셀프 이전설치 <br/>선택률 80%</h3>
+                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown03)]">10명의 고객님중 8명은 <br/>직접 셀프로 이전 설치 진행</p>
+            </div>
+            <!-- CARD -->
+            <div class="md:mt-16 text-center">
+                <img src="<?php echo G5_THEME_URL?>/img/index_solution-3.webp" alt="">
+                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown01)] font-bold">Solution</p>
+                <h3 class="mt-5 max-md:mt-2 H4 max-md:text-[20px] font-bold">전문가 설치<br/>서비스</h3>
+                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown03)]">숙련된 전문가가 <br/>완벽하게 설치까지</p>
+            </div>
+            <!-- CARD -->
+            <div class="text-center">
+                <img src="<?php echo G5_THEME_URL?>/img/index_solution-4.webp" alt="">
+                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown01)] font-bold">Solution</p>
+                <h3 class="mt-5 max-md:mt-2 H4 max-md:text-[20px] font-bold">직영 공장<br/>+E0 등급 자재</h3>
+                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown03)]">2020년 직영 공장 구축, <br/>품질 클레임 90% 감소</p>
+            </div>
+        </div>
     </section>
     <section class="container py-24 max-w-[930px]">
         <p class="MainSectionTitleENG text-center">Technology patent</p>
         <h2 class="MainSectionTitle text-center mt-4">업계 유일, 특허청 인증 4건의 독창 기술 <br/>축적된 숙련 기술</h2>
-        <div class="mt-16 grid grid-cols-2 gap-5">
+        <div class="mt-16 grid grid-cols-2 max-md:grid-cols-1 gap-5">
             <div class="p-10 bg-gray-50 rounded-2xl">
                 <img class="ml-auto" src="<?php echo G5_THEME_URL?>/img/patent-1.webp" alt="특허 10-1707647호">
                 <h3 class="text-2xl font-bold">익스텐션 기능</h3>
