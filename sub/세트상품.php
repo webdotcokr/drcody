@@ -5,11 +5,13 @@ include_once(G5_PATH.'/head.php');  // 헤더 포함
 ?>
 
 <main>
-    <section>
-        <h2>편리함과 기능이 돋보이는 디알코디 시스템행거</h2>
-        <p>흔들리지 않는 디알코디만의 익스텐션 무타공 기둥 <br/>특허 받은 익스텐션 기둥으로 벽이나 천장 훼손 없이 강력하게 고정합니다.</p>
+    <section class="h-[600px] max-md:h-[350px] text-white bg-[url(<?php echo G5_THEME_URL?>/img/setProductIntro.webp)] bg-cover bg-center flex flex-col justify-center">
+        <div class="container">
+            <h2 class="BannerTitleText">편리함과 기능이 돋보이는 <br/>디알코디 시스템행거</h2>
+            <p class="mt-4 PageSubTitleText">흔들리지 않는 디알코디만의 익스텐션 무타공 기둥 <br/>특허 받은 익스텐션 기둥으로 벽이나 천장 훼손 없이 강력하게 고정합니다.</p>
+        </div>
     </section>
-    <section class="py-20 container flex flex-col items-center">
+    <section class="py-20 max-md:pt-8 max-md:pb-16 container flex flex-col items-center">
         <!-- CONTAINER -->
         <div class="flex gap-5 max-md:gap-3">
             <!-- CARD -->

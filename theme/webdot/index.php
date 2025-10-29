@@ -96,80 +96,107 @@ include_once(G5_THEME_PATH.'/head.php');
     <section class="container py-24 max-w-[930px]">
         <p class="MainSectionTitleENG text-center">Technology patent</p>
         <h2 class="MainSectionTitle text-center mt-4">업계 유일, 특허청 인증 4건의 독창 기술 <br/>축적된 숙련 기술</h2>
-        <div class="mt-16 grid grid-cols-2 max-md:grid-cols-1 gap-5">
-            <div class="p-10 bg-gray-50 rounded-2xl">
-                <img class="ml-auto" src="<?php echo G5_THEME_URL?>/img/patent-1.webp" alt="특허 10-1707647호">
-                <h3 class="text-2xl font-bold">익스텐션 기능</h3>
-                <p class="mt-2 text-base font-semibold">특허 10-1707647호</p>
-                <p class="mt-4 text-base text-gray-700">2,230mm~2,680mm, 최대 45cm 자유 조절벽에 구멍 뚫지 않고도 천장과 바닥 사이 압착 고정으로 최대 450mm까지 높이 조절이 가능한 특허받은 무타공 드레스룸 기둥 시스템</p>
+        <div class="mt-16 grid grid-cols-2 max-md:grid-cols-1 gap-5 max-md:gap-2">
+            <div class="p-10 max-md:p-5 bg-gray-50 rounded-2xl">
+                <img class="ml-auto max-md:w-[60%] max-md:-mb-6" src="<?php echo G5_THEME_URL?>/img/technology-patent-1.webp" alt="특허 10-1707647호">
+                <h3 class="text-2xl max-md:text-[20px] font-bold">익스텐션 기능</h3>
+                <p class="mt-2 text-base max-md:text-sm font-semibold">특허 10-1707647호</p>
+                <p class="mt-4 text-base max-md:text-sm text-gray-700">2,230mm~2,680mm, 최대 45cm 자유 조절벽에 구멍 뚫지 않고도 천장과 바닥 사이 압착 고정으로 최대 450mm까지 높이 조절이 가능한 특허받은 무타공 드레스룸 기둥 시스템</p>
             </div>
-            <div class="p-10 bg-gray-50 rounded-2xl">
-                <img class="ml-auto" src="<?php echo G5_THEME_URL?>/img/patent-2.webp" alt="특허 10-1707647호">
-                <h3 class="text-2xl font-bold">행거용 프레임</h3>
-                <p class="mt-2 text-base font-semibold">특허청 디자인등록 (제30-0808182호)</p>
-                <p class="mt-4 text-base text-gray-700">알루미늄 프로파일 구조로, 기둥 양쪽에 두 줄의 나사홈이 있어 선반과 행거봉의 높이를 자유롭게 조절할 수 있는 혁신적인 모듈형 프레임</p>
+            <div class="p-10 max-md:p-5 bg-gray-50 rounded-2xl">
+                <img class="ml-auto max-md:w-[60%] max-md:-mb-6" src="<?php echo G5_THEME_URL?>/img/technology-patent-2.webp" alt="특허 10-1707647호">
+                <h3 class="text-2xl max-md:text-[20px] font-bold">행거용 프레임</h3>
+                <p class="mt-2 text-base max-md:text-sm font-semibold">특허청 디자인등록 (제30-0808182호)</p>
+                <p class="mt-4 text-base max-md:text-sm text-gray-700">알루미늄 프로파일 구조로, 기둥 양쪽에 두 줄의 나사홈이 있어 선반과 행거봉의 높이를 자유롭게 조절할 수 있는 혁신적인 모듈형 프레임</p>
             </div>
-            <div class="p-10 bg-gray-50 rounded-2xl">
-                <img class="ml-auto" src="<?php echo G5_THEME_URL?>/img/patent-3.webp" alt="특허 10-1707647호">
-                <h3 class="text-2xl font-bold">행거용 연결브라켓</h3>
-                <p class="mt-2 text-base font-semibold">특허청 디자인등록(제30-0813735호)</p>
-                <p class="mt-4 text-base text-gray-700">혁신적인 연결 브라켓으로, 알루미늄 프로파일 기둥의 양쪽 홈에 선반과 행거봉을 자유롭게 장찰할 수 있도록 하는 핵심 연결 부품</p>
+            <div class="p-10 max-md:p-5 bg-gray-50 rounded-2xl">
+                <img class="ml-auto max-md:w-[60%] max-md:-mb-6" src="<?php echo G5_THEME_URL?>/img/technology-patent-3.webp" alt="특허 10-1707647호">
+                <h3 class="text-2xl max-md:text-[20px] font-bold">행거용 연결브라켓</h3>
+                <p class="mt-2 text-base max-md:text-sm font-semibold">특허청 디자인등록(제30-0813735호)</p>
+                <p class="mt-4 text-base max-md:text-sm text-gray-700">혁신적인 연결 브라켓으로, 알루미늄 프로파일 기둥의 양쪽 홈에 선반과 행거봉을 자유롭게 장찰할 수 있도록 하는 핵심 연결 부품</p>
             </div>
-            <div class="p-10 bg-gray-50 rounded-2xl">
-                <img class="ml-auto" src="<?php echo G5_THEME_URL?>/img/patent-4.webp" alt="특허 10-1707647호">
-                <h3 class="text-2xl font-bold">선반 고정프레임</h3>
-                <p class="mt-2 text-base font-semibold">특허청 디자인등록(제30-0813734호)</p>
-                <p class="mt-4 text-base text-gray-700">혁신적인 선반 고정 시스템으로, 기둥의 나사홈에 정확하게 결합하여 선반을 견고하게 고정하면서도 높이 조절과 해체가 용이한 핵심 고정 부품</p>
+            <div class="p-10 max-md:p-5 bg-gray-50 rounded-2xl">
+                <img class="ml-auto max-md:w-[60%] max-md:-mb-6" src="<?php echo G5_THEME_URL?>/img/technology-patent-4.webp" alt="특허 10-1707647호">
+                <h3 class="text-2xl max-md:text-[20px] font-bold">선반 고정프레임</h3>
+                <p class="mt-2 text-base max-md:text-sm font-semibold">특허청 디자인등록(제30-0813734호)</p>
+                <p class="mt-4 text-base max-md:text-sm text-gray-700">혁신적인 선반 고정 시스템으로, 기둥의 나사홈에 정확하게 결합하여 선반을 견고하게 고정하면서도 높이 조절과 해체가 용이한 핵심 고정 부품</p>
             </div>
         </div>
     </section>
-    <section class="bg-[--bg-beige] py-24">
+    <section class="bg-[--bg-beige] py-24 max-md:py-16">
         <div class="container">
             <p class="MainSectionTitleENG text-center">4-Step Quotation Process</p>
             <p class="text-2xl font-bold text-center mt-4">견적, 더이상 망설이지 마세요</p>
             <h2 class="MainSectionTitle text-center mt-4">간단한 4단계로 완성되는 <br/>부담 없는 견적 프로세스</h2>
             <!-- Cards grid -->
+            <style>
+                .process-card-with-arrow {
+                    position: relative;
+                }
+                .process-card-with-arrow::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: -2rem;
+                    transform: translateY(-50%);
+                    width: 40px;
+                    height: 40px;
+                    background-image: url('<?php echo G5_THEME_URL?>/img/arrow-brown.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                @media (max-width: 768px) {
+                    .process-card-with-arrow::before {
+                        top: auto;
+                        left: 50%;
+                        bottom: auto;
+                        top: -2rem;
+                        transform: translateX(-50%) rotate(90deg);
+                    }
+                }
+            </style>
             <div class="mt-12 grid grid-cols-4 max-md:grid-cols-1 gap-5">
                 <div class="p-6 rounded-2xl bg-white">
                     <img class="m-auto" src="<?php echo G5_THEME_URL?>/img/process-1.webp" alt="손그림 전송">
                     <div class="mt-2 flex items-center">
-                        <h3 class="text-xl font-bold text-[--main-brown01]">1단계</h3>
+                        <h3 class="text-xl max-md:text-[17px] font-bold text-[--main-brown01]">1단계</h3>
                         <span class="w-[1px] h-[16px] bg-[#eee] mx-2"></span>
-                        <h4 class="text-2xl font-bold">손그림 전송</h4>
+                        <h4 class="text-2xl font-bold max-md:text-xl">손그림 전송</h4>
                     </div>
-                    <p class="mt-2 text-base">간단한 손그림이나 도면을 전송하세요. 카카오톡, 이메일 무엇이든 OK</p>
+                    <p class="mt-2 text-base max-md:text-sm">간단한 손그림이나 도면을 전송하세요. 카카오톡, 이메일 무엇이든 OK</p>
                 </div>
-                <div class="p-6 rounded-2xl bg-white">
-                    <img class="m-auto" src="<?php echo G5_THEME_URL?>/img/process-2.webp" alt="손그림 전송">   
+                <div class="process-card-with-arrow p-6 rounded-2xl bg-white max-md:pt-0">
+                    <img class="m-auto" src="<?php echo G5_THEME_URL?>/img/process-2.webp" alt="손그림 전송">
                     <div class="mt-2 flex items-center">
-                        <h3 class="text-xl font-bold text-[--main-brown01]">2단계</h3>
+                        <h3 class="text-xl max-md:text-[17px] font-bold text-[--main-brown01]">2단계</h3>
                         <span class="w-[1px] h-[16px] bg-[#eee] mx-2"></span>
-                        <h4 class="text-2xl font-bold">맞춤 3D 도면 제공</h4>
+                        <h4 class="text-2xl font-bold max-md:text-xl">맞춤 3D 도면 제공</h4>
                     </div>
-                    <p class="mt-2 text-base">전문 설계사가 3D도면을 제작합니다. 정확한 치수와 디자인 확인</p>
+                    <p class="mt-2 text-base max-md:text-sm ">전문 설계사가 3D도면을 제작합니다. 정확한 치수와 디자인 확인</p>
                 </div>
-                <div class="p-6 rounded-2xl bg-white">
+                <div class="process-card-with-arrow p-6 rounded-2xl bg-white max-md:pt-0">
                     <img class="m-auto" src="<?php echo G5_THEME_URL?>/img/process-3.webp" alt="손그림 전송">
                     <div class="mt-2 flex items-center">
-                        <h3 class="text-xl font-bold text-[--main-brown01]">3단계</h3>
+                        <h3 class="text-xl max-md:text-[17px] font-bold text-[--main-brown01]">3단계</h3>
                         <span class="w-[1px] h-[16px] bg-[#eee] mx-2"></span>
-                        <h4 class="text-2xl font-bold">전문가 상담</h4>
+                        <h4 class="text-2xl font-bold max-md:text-xl">전문가 상담</h4>
                     </div>
-                    <p class="mt-2 text-base">설계안을 바탕으로 상세 상담 자재, 색상, 설치 일정 논의</p>
+                    <p class="mt-2 text-base max-md:text-sm">설계안을 바탕으로 상세 상담 자재, 색상, 설치 일정 논의</p>
                 </div>
-                <div class="p-6 rounded-2xl bg-white">
+                <div class="process-card-with-arrow p-6 rounded-2xl bg-white max-md:pt-0" max-md:pt-0>
                     <img class="m-auto" src="<?php echo G5_THEME_URL?>/img/process-4.webp" alt="손그림 전송">
                     <div class="mt-2 flex items-center">
-                        <h3 class="text-xl font-bold text-[--main-brown01]">4단계</h3>
+                        <h3 class="text-xl max-md:text-[17px] font-bold text-[--main-brown01]">4단계</h3>
                         <span class="w-[1px] h-[16px] bg-[#eee] mx-2"></span>
-                        <h4 class="text-2xl font-bold">최종 결정</h4>
+                        <h4 class="text-2xl font-bold max-md:text-xl">최종 결정</h4>
                     </div>
-                    <p class="mt-2 text-base">모든 것이 확정되면 계약 진행 부담 없이 충분히 고민하세요</p>
+                    <p class="mt-2 text-base max-md:text-sm">모든 것이 확정되면 계약 진행 부담 없이 충분히 고민하세요</p>
                 </div>
             </div>
             <!-- Cards grid -->
-             <p class="text-xl text-[--main-brown02] text-center mt-12">부담 없이 지금 바로 문의하세요</p>
-             <div class="mt-6 flex justify-center gap-4">
+             <p class="H5 text-[--main-brown02] text-center font-semibold mt-12">부담 없이 지금 바로 문의하세요</p>
+             <div class="mt-6 flex max-md:flex-col justify-center gap-4 max-md:gap-2">
                 <a href="#" class="btn bg-white rounded-full p-2 pr-4 flex items-center gap-1.5 border border-gray-200">
                     <img src="<?php echo G5_THEME_URL?>/img/btn-contact-icon.png">
                     <span class="text-base font-semibold">간편 견적 문의</span>
@@ -183,8 +210,8 @@ include_once(G5_THEME_PATH.'/head.php');
              </div>
         </div>
     </section>
-    <section class="py-24 flex flex-col gap-12 text-center items-center bg-[url(<?php echo G5_THEME_URL?>/img/indexCta.webp)]">
-        <p class="text-3xl font-bold leading-[1.5] text-white">지금 바로 무료 견적을 받아보세요 <br/>10년 경험의 전문가가 24시간 내에 3D 설계안을 제공합니다.</p>
+    <section class="py-24 flex flex-col gap-12 text-center items-center bg-[url(<?php echo G5_THEME_URL?>/img/indexCta.webp)] bg-cover">
+        <p class="text-3xl max-md:text-xl font-bold leading-[1.5] text-white">지금 바로 무료 견적을 받아보세요 <br/>10년 경험의 전문가가 <br class="md:hidden"/>24시간 내에 3D 설계안을 제공합니다.</p>
         <a href="#" class="btn bg-white rounded-full p-2 pr-4 flex items-center gap-1.5 border border-gray-200">
             <img src="<?php echo G5_THEME_URL?>/img/btn-contact-icon.png">
             <span class="text-base font-semibold">무료 견적 상담 시작하기</span>
