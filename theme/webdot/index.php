@@ -1,3 +1,9 @@
+
+<?php
+include_once('./common.php');  // 공통 설정 불러오기
+add_stylesheet('<link rel="stylesheet" href="'.G5_CSS_URL.'/global.css">', 0);  // 필요 시 CSS 추가
+include_once(G5_PATH.'/head.php');  // 헤더 포함
+?>
 <?php
 if (!defined('_INDEX_')) define('_INDEX_', true);
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
@@ -19,48 +25,78 @@ include_once(G5_THEME_PATH.'/head.php');
     <section class="container">
         <p class="MainSectionTitleENG text-center">Times of trust</p>
         <h2 class="MainSectionTitle text-center mt-4">데이터로 증명하는 신뢰 <br/>10년간 축적된 신뢰의 숫자들</h2>
-        <div class="mt-12 grid grid-cols-4 gap-8">
-            <div class="flex flex-col justify-between aspect-[1/1.05] p-8 rounded-3xl bg-[url('<?php echo G5_THEME_URL ?>/img/trust-1.webp')] bg-cover">
+        <div class="mt-12 grid grid-cols-4 max-md:grid-cols-2 gap-8 max-md:gap-4">
+            <div class="flex flex-col justify-between aspect-[1/1.05] p-8 max-md:p-4 rounded-3xl max-md:rounded-xl bg-[url('<?php echo G5_THEME_URL ?>/img/trust-1.webp')] bg-cover">
                 <div>
-                    <p class="text-2xl font-bold">2015년 설립</p>
-                    <p class="text-lg mt-1">창업과 동시 특허 출원</p>
+                    <p class="H4 font-bold">2015년 설립</p>
+                    <p class="H6 mt-1">창업과 동시 특허 출원</p>
                 </div>
-                <p class="text-5xl font-extrabold text-white">2015</p>
+                <p class="text-5xl max-md:text-[32px] font-extrabold text-white">2015</p>
             </div>
-            <div class="flex flex-col text-white justify-between p-8 rounded-3xl bg-[url('<?php echo G5_THEME_URL ?>/img/trust-2.webp')] bg-cover">
+            <div class="flex flex-col text-white justify-between p-8 max-md:p-4 rounded-3xl max-md:rounded-xl bg-[url('<?php echo G5_THEME_URL ?>/img/trust-2.webp')] bg-cover">
                 <div>
-                    <p class="text-2xl font-bold">4건 특허</p>
-                    <p class="text-lg mt-1">발명특허 1건, 디자인특허 3건</p>
+                    <p class="H4 font-bold">4건 특허</p>
+                    <p class="H6 mt-1">발명특허 1건, 디자인특허 3건</p>
                 </div>
-                <p class="text-5xl font-extrabold">4</p>
+                <p class="text-5xl max-md:text-[32px] font-extrabold">4</p>
             </div>
-            <div class="flex flex-col text-white justify-between p-8 rounded-3xl bg-[url('<?php echo G5_THEME_URL ?>/img/trust-3.webp')] bg-cover">
+            <div class="flex flex-col text-white justify-between p-8 max-md:p-4 rounded-3xl max-md:rounded-xl bg-[url('<?php echo G5_THEME_URL ?>/img/trust-3.webp')] bg-cover">
                 <div>
-                    <p class="text-2xl font-bold">30,000+<br/>누적설치</p>
-                    <p class="text-lg mt-1">검증된 기술력과 경험</p>
+                    <p class="H4 font-bold">30,000+<br/>누적설치</p>
+                    <p class="H6 mt-1">검증된 기술력과 경험</p>
                 </div>
-                <p class="text-5xl font-extrabold text-white">30,000+</p>
+                <p class="text-5xl max-md:text-[32px] font-extrabold text-white">30,000+</p>
             </div>
-            <div class="flex flex-col justify-between p-8 rounded-3xl bg-[url('<?php echo G5_THEME_URL ?>/img/trust-4.webp')] bg-cover">
+            <div class="flex flex-col justify-between p-8 max-md:p-4 rounded-3xl max-md:rounded-xl bg-[url('<?php echo G5_THEME_URL ?>/img/trust-4.webp')] bg-cover">
                 <div>
-                    <p class="text-2xl font-bold">62,904건<br/>누적상담</p>
-                    <p class="text-lg mt-1">2025.08.13 기준</p>
+                    <p class="H4 font-bold">62,904건<br/>누적상담</p>
+                    <p class="H6 mt-1">2025.08.13 기준</p>
                 </div>
-                <p class="text-5xl font-extrabold text-white">62,904</p>
+                <p class="text-5xl max-md:text-[32px] font-extrabold text-white">62,904</p>
             </div>
         </div>
-        <p class="mt-12 text-3xl text-center font-bold text-gray-500">당신의 어떤 고민이든, <br/>우리는 이미 <span class="text-black">6만 번 이상 듣고 해결해왔습니다.</span></p>
+        <p class="mt-12 text-3xl max-md:text-[24px] text-center font-bold text-gray-500">당신의 어떤 고민이든, <br/>우리는 이미 <span class="text-black">6만 번 이상 듣고 해결해왔습니다.</span></p>
     </section>
     <section class="container text-center bg-[url('<?php echo G5_THEME_URL?>/img/bg-1.webp)'] bg-cover">
         <img class="mt-4 text-center" src="<?php echo G5_THEME_URL ?>/img/arrow-down-1.png">
         <p class="MainSectionTitleENG">DRCODY solution</p>
         <h2 class="MainSectionTitle text-center mt-4">당신의 가장 큰 고민, <br/>디알코디는 이렇게 해결합니다</h2>
-        <p class="text-2xl font-medium mt-4">10년간 6만 건의 상담으로 찾아낸 핵심 솔루션</p>
+        <p class="H4 max-md:text-[20px] font-medium mt-4">10년간 6만 건의 상담으로 찾아낸 핵심 솔루션</p>
+        <div class="max-md:mt-8 grid grid-cols-4 max-md:grid-cols-2 gap-16 max-md:gap-x-6 max-md:gap-y-10">
+            <!-- CARD -->
+            <div class="text-center">
+                <img src="<?php echo G5_THEME_URL?>/img/index_solution-1.webp" alt="">
+                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown01)] font-bold">Solution</p>
+                <h3 class="mt-5 max-md:mt-2 H4 max-md:text-[20px] font-bold">특허 무타공 기술</h3>
+                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown03)]">벽에 못 박지 않는 특허 기술로 <br/>원상복구 100%</p>
+            </div>
+            <!-- CARD -->
+            <div class="md:mt-16 text-center">
+                <img src="<?php echo G5_THEME_URL?>/img/index_solution-2.webp" alt="">
+                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown01)] font-bold">Solution</p>
+                <h3 class="mt-5 max-md:mt-2 H4 max-md:text-[20px] font-bold">셀프 이전설치 <br/>선택률 80%</h3>
+                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown03)]">10명의 고객님중 8명은 <br/>직접 셀프로 이전 설치 진행</p>
+            </div>
+            <!-- CARD -->
+            <div class="md:mt-16 text-center">
+                <img src="<?php echo G5_THEME_URL?>/img/index_solution-3.webp" alt="">
+                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown01)] font-bold">Solution</p>
+                <h3 class="mt-5 max-md:mt-2 H4 max-md:text-[20px] font-bold">전문가 설치<br/>서비스</h3>
+                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown03)]">숙련된 전문가가 <br/>완벽하게 설치까지</p>
+            </div>
+            <!-- CARD -->
+            <div class="text-center">
+                <img src="<?php echo G5_THEME_URL?>/img/index_solution-4.webp" alt="">
+                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown01)] font-bold">Solution</p>
+                <h3 class="mt-5 max-md:mt-2 H4 max-md:text-[20px] font-bold">직영 공장<br/>+E0 등급 자재</h3>
+                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown03)]">2020년 직영 공장 구축, <br/>품질 클레임 90% 감소</p>
+            </div>
+        </div>
     </section>
     <section class="container py-24 max-w-[930px]">
         <p class="MainSectionTitleENG text-center">Technology patent</p>
         <h2 class="MainSectionTitle text-center mt-4">업계 유일, 특허청 인증 4건의 독창 기술 <br/>축적된 숙련 기술</h2>
-        <div class="mt-16 grid grid-cols-2 gap-5">
+        <div class="mt-16 grid grid-cols-2 max-md:grid-cols-1 gap-5">
             <div class="p-10 bg-gray-50 rounded-2xl">
                 <img class="ml-auto" src="<?php echo G5_THEME_URL?>/img/patent-1.webp" alt="특허 10-1707647호">
                 <h3 class="text-2xl font-bold">익스텐션 기능</h3>
@@ -93,7 +129,7 @@ include_once(G5_THEME_PATH.'/head.php');
             <p class="text-2xl font-bold text-center mt-4">견적, 더이상 망설이지 마세요</p>
             <h2 class="MainSectionTitle text-center mt-4">간단한 4단계로 완성되는 <br/>부담 없는 견적 프로세스</h2>
             <!-- Cards grid -->
-            <div class="mt-12 grid grid-cols-4 gap-5">
+            <div class="mt-12 grid grid-cols-4 max-md:grid-cols-1 gap-5">
                 <div class="p-6 rounded-2xl bg-white">
                     <img class="m-auto" src="<?php echo G5_THEME_URL?>/img/process-1.webp" alt="손그림 전송">
                     <div class="mt-2 flex items-center">
