@@ -22,6 +22,31 @@ include_once(G5_THEME_PATH.'/head.php');
 ?>
 
 <div>
+    <section class="py-28 max-md:py-16 container">
+        <div class="grid grid-cols-[1.5fr_1fr] max-md:grid-cols-1 gap-6 items-center">
+            <img class="max-md:hidden" src="<?php echo G5_THEME_URL?>/img/test.png">
+            <div class="max-md:text-center">
+                <p class="MainSectionTitleENG">Why Choose</p>
+                <h2 class="mt-4 MainSectionTitle mt-4">한 번의 선택이 <br/>평생의 만족이 되도록</h2>
+                <p class="mt-5 text-2xl max-md:text-xl">2015년부터 30,000+ 가구가 선택한 <br/>단 하나의 이유</p>
+                <img class="md:hidden mt-6" src="<?php echo G5_THEME_URL?>/img/test.png">
+                <div class="mt-16 max-md:mt-6">
+                    <div class="p-8 bg-gray-50 rounded-xl flex flex-col items-center justify-center">
+                        <div class="flex items-center gap-5">
+                            <img src="<?php echo G5_THEME_URL?>/img/quote-1.svg">
+                            <p class="text-2xl font-semibold text-center">벽 손상 없는 무타공 드레스룸 <br/>이사 갈 땐 그대로 가져가세요.</p>
+                            <img src="<?php echo G5_THEME_URL?>/img/quote-2.svg">
+                        </div>
+                        <a href="#" class="mt-4 btn bg-white rounded-full p-2 pr-4 flex items-center gap-1.5 border border-gray-200">
+                            <img src="<?php echo G5_THEME_URL?>/img/btn-contact-icon.png">
+                            <span class="text-base font-semibold">간편 견적 문의</span>
+                            <img src="<?php echo G5_THEME_URL?>/img/btn-arrow-right.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="container">
         <p class="MainSectionTitleENG text-center">Times of trust</p>
         <h2 class="MainSectionTitle text-center mt-4">데이터로 증명하는 신뢰 <br/>10년간 축적된 신뢰의 숫자들</h2>
@@ -56,47 +81,49 @@ include_once(G5_THEME_PATH.'/head.php');
             </div>
         </div>
         <p class="mt-12 text-3xl max-md:text-[24px] text-center font-bold text-gray-500">당신의 어떤 고민이든, <br/>우리는 이미 <span class="text-black">6만 번 이상 듣고 해결해왔습니다.</span></p>
+        <img class="mt-6 m-auto text-center" src="<?php echo G5_THEME_URL ?>/img/arrow-down-1.png">
     </section>
-    <section class="container text-center bg-[url('<?php echo G5_THEME_URL?>/img/bg-1.webp)'] bg-cover">
-        <img class="mt-4 text-center" src="<?php echo G5_THEME_URL ?>/img/arrow-down-1.png">
-        <p class="MainSectionTitleENG">DRCODY solution</p>
-        <h2 class="MainSectionTitle text-center mt-4">당신의 가장 큰 고민, <br/>디알코디는 이렇게 해결합니다</h2>
-        <p class="H4 max-md:text-[20px] font-medium mt-4">10년간 6만 건의 상담으로 찾아낸 핵심 솔루션</p>
-        <div class="max-md:mt-8 grid grid-cols-4 max-md:grid-cols-2 gap-16 max-md:gap-x-6 max-md:gap-y-10">
-            <!-- CARD -->
-            <div class="text-center">
-                <img src="<?php echo G5_THEME_URL?>/img/index_solution-1.webp" alt="">
-                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown01)] font-bold">Solution</p>
-                <h3 class="mt-5 max-md:mt-2 H4 max-md:text-[20px] font-bold">특허 무타공 기술</h3>
-                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown03)]">벽에 못 박지 않는 특허 기술로 <br/>원상복구 100%</p>
-            </div>
-            <!-- CARD -->
-            <div class="md:mt-16 text-center">
-                <img src="<?php echo G5_THEME_URL?>/img/index_solution-2.webp" alt="">
-                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown01)] font-bold">Solution</p>
-                <h3 class="mt-5 max-md:mt-2 H4 max-md:text-[20px] font-bold">셀프 이전설치 <br/>선택률 80%</h3>
-                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown03)]">10명의 고객님중 8명은 <br/>직접 셀프로 이전 설치 진행</p>
-            </div>
-            <!-- CARD -->
-            <div class="md:mt-16 text-center">
-                <img src="<?php echo G5_THEME_URL?>/img/index_solution-3.webp" alt="">
-                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown01)] font-bold">Solution</p>
-                <h3 class="mt-5 max-md:mt-2 H4 max-md:text-[20px] font-bold">전문가 설치<br/>서비스</h3>
-                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown03)]">숙련된 전문가가 <br/>완벽하게 설치까지</p>
-            </div>
-            <!-- CARD -->
-            <div class="text-center">
-                <img src="<?php echo G5_THEME_URL?>/img/index_solution-4.webp" alt="">
-                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown01)] font-bold">Solution</p>
-                <h3 class="mt-5 max-md:mt-2 H4 max-md:text-[20px] font-bold">직영 공장<br/>+E0 등급 자재</h3>
-                <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown03)]">2020년 직영 공장 구축, <br/>품질 클레임 90% 감소</p>
+    <section class="py-16 pt-8 text-center bg-[url(<?php echo G5_THEME_URL?>/img/bg-1.webp)] bg-cover bg-center">
+        <div class="container">
+            <p class="MainSectionTitleENG">DRCODY solution</p>
+            <h2 class="MainSectionTitle text-center mt-4">당신의 가장 큰 고민, <br/>디알코디는 이렇게 해결합니다</h2>
+            <p class="H4 max-md:text-[20px] font-medium mt-4">10년간 6만 건의 상담으로 찾아낸 <br class="md:hidden">핵심 솔루션</p>
+            <div class="max-md:mt-8 grid grid-cols-4 max-md:grid-cols-2 gap-16 max-md:gap-x-6 max-md:gap-y-10">
+                <!-- CARD -->
+                <div class="text-center">
+                    <img src="<?php echo G5_THEME_URL?>/img/index_solution-1.webp" alt="">
+                    <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown01)] font-bold">Solution</p>
+                    <h3 class="mt-5 max-md:mt-2 H4 max-md:text-[20px] font-bold">특허 무타공 기술</h3>
+                    <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown03)]">벽에 못 박지 않는 특허 기술로 <br/>원상복구 100%</p>
+                </div>
+                <!-- CARD -->
+                <div class="md:mt-16 text-center">
+                    <img src="<?php echo G5_THEME_URL?>/img/index_solution-2.webp" alt="">
+                    <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown01)] font-bold">Solution</p>
+                    <h3 class="mt-5 max-md:mt-2 H4 max-md:text-[20px] font-bold">셀프 이전설치 <br/>선택률 80%</h3>
+                    <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown03)]">10명의 고객님중 8명은 <br/>직접 셀프로 이전 설치 진행</p>
+                </div>
+                <!-- CARD -->
+                <div class="md:mt-16 text-center">
+                    <img src="<?php echo G5_THEME_URL?>/img/index_solution-3.webp" alt="">
+                    <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown01)] font-bold">Solution</p>
+                    <h3 class="mt-5 max-md:mt-2 H4 max-md:text-[20px] font-bold">전문가 설치<br/>서비스</h3>
+                    <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown03)]">숙련된 전문가가 <br/>완벽하게 설치까지</p>
+                </div>
+                <!-- CARD -->
+                <div class="text-center">
+                    <img src="<?php echo G5_THEME_URL?>/img/index_solution-4.webp" alt="">
+                    <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown01)] font-bold">Solution</p>
+                    <h3 class="mt-5 max-md:mt-2 H4 max-md:text-[20px] font-bold">직영 공장<br/>+E0 등급 자재</h3>
+                    <p class="mt-1 text-base max-md:text-sm text-[var(--main-brown03)]">2020년 직영 공장 구축, <br/>품질 클레임 90% 감소</p>
+                </div>
             </div>
         </div>
     </section>
     <section class="container py-24 max-w-[930px]">
         <p class="MainSectionTitleENG text-center">Technology patent</p>
-        <h2 class="MainSectionTitle text-center mt-4">업계 유일, 특허청 인증 4건의 독창 기술 <br/>축적된 숙련 기술</h2>
-        <div class="mt-16 grid grid-cols-2 max-md:grid-cols-1 gap-5 max-md:gap-2">
+        <h2 class="MainSectionTitle text-center mt-4">업계 유일, 특허청 인증 <br class="md:hidden">4건의 독창 기술 <br/>축적된 숙련 기술</h2>
+        <div class="mt-10 max-md:mt-8 grid grid-cols-2 max-md:grid-cols-1 gap-5 max-md:gap-2">
             <div class="p-10 max-md:p-5 bg-gray-50 rounded-2xl">
                 <img class="ml-auto max-md:w-[60%] max-md:-mb-6" src="<?php echo G5_THEME_URL?>/img/technology-patent-1.webp" alt="특허 10-1707647호">
                 <h3 class="text-2xl max-md:text-[20px] font-bold">익스텐션 기능</h3>
@@ -126,7 +153,7 @@ include_once(G5_THEME_PATH.'/head.php');
     <section class="bg-[--bg-beige] py-24 max-md:py-16">
         <div class="container">
             <p class="MainSectionTitleENG text-center">4-Step Quotation Process</p>
-            <p class="text-2xl font-bold text-center mt-4">견적, 더이상 망설이지 마세요</p>
+            <p class="text-2xl max-md:text-xl font-bold text-center mt-4">견적, 더이상 망설이지 마세요</p>
             <h2 class="MainSectionTitle text-center mt-4">간단한 4단계로 완성되는 <br/>부담 없는 견적 프로세스</h2>
             <!-- Cards grid -->
             <style>
@@ -156,7 +183,7 @@ include_once(G5_THEME_PATH.'/head.php');
                     }
                 }
             </style>
-            <div class="mt-12 grid grid-cols-4 max-md:grid-cols-1 gap-5">
+            <div class="mt-12 max-md:mt-8 grid grid-cols-4 max-md:grid-cols-1 gap-5">
                 <div class="p-6 rounded-2xl bg-white">
                     <img class="m-auto" src="<?php echo G5_THEME_URL?>/img/process-1.webp" alt="손그림 전송">
                     <div class="mt-2 flex items-center">
@@ -208,6 +235,61 @@ include_once(G5_THEME_PATH.'/head.php');
                     <img src="<?php echo G5_THEME_URL?>/img/btn-arrow-right.png">
                 </a>
              </div>
+        </div>
+    </section>
+    <section class="mt-24 mb-16 container flex flex-col items-center">
+        <p class="MainSectionTitleENG">Turning Your Space into Art</p>
+        <h2 class="mt-4 MainSectionTitle text-center">고객님의 공간이 작품이 되는 순간 <br/>다양한 공간별 맞춤 시공 사례를 확인하세요</h2>
+        <div class="mt-10 w-full h-[650px] aspect-2/1 rounded-lg bg-[url(<?php echo G5_THEME_URL?>/img/slide-test.png)] flex flex-col justify-end p-6">
+            <div class="px-5 py-3 bg-black/80 text-white flex items-center gap-4 rounded-full self-start">
+                <span class="H5 font-medium">ㄱ형드레스룸</span>
+                <div class="w-[55px] h-[1px] bg-white/50"></div>
+                <span class="H5 font-medium">좁은 벽면 최적화</span>
+            </div>
+        </div>
+        <a href="#" class="mt-10 btn bg-white rounded-full p-2 pr-4 flex items-center gap-1.5 border border-gray-200">
+            <img src="<?php echo G5_THEME_URL?>/img/btn-gallery-icon.png">
+            <span class="text-base font-semibold">더 많은 시공사례 보기</span>
+            <img src="<?php echo G5_THEME_URL?>/img/btn-arrow-right.png">
+        </a>
+    </section>
+    <section class="pt-24 pb-16 bg-gray-50">
+        <div class="container flex flex-col items-center">
+            <p class="MainSectionTitleENG">Review of Our Customers</p>
+            <h2 class="mt-4 MainSectionTitle text-center">이미 경험한 고객들의 목소리</h2>
+            <p class="mt-5 H4 font-medium text-[var(--main-brown03)]">유튜브 영상 후기와 “내돈내산" 리뷰를 확인하세요</p>
+            <div class="mt-12 grid grid-cols-2 gap-8">
+                <div>
+                    <img class="border-10 border-white rounded-xl shadow-xl" src="<?php echo G5_THEME_URL?>/img/video-test.png">
+                    <h3 class="mt-4 H4 font-bold text-gray-900">디알코디 3년 사용 후기 | 이사도 문제없어요!</h3>
+                    <p class="mt-2 text-sm text-gray-800">조회수 12.3만회</p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- Review Card -->
+                    <div class="p-3 bg-white rounded-2xl overflow-hidden shadow-lg">
+                        <img class="" src="<?php echo G5_THEME_URL?>/img/test-2.png" alt="ㄱ자형 드레스룸">
+                        <div class="">
+                            <div class="flex justify-between items-center">
+                                <h4 class="H6 font-bold text-[var(--main-brown01)]">ㄱ자형 드레스룸</h4>
+                                <div class="flex gap-0.5">
+                                    <span class="text-yellow-400">★</span>
+                                    <span class="text-yellow-400">★</span>
+                                    <span class="text-yellow-400">★</span>
+                                    <span class="text-yellow-400">★</span>
+                                    <span class="text-yellow-400">★</span>
+                                </div>
+                            </div>
+                            <p class="mt-3 text-base text-gray-700 leading-relaxed line-clamp-3">전세 만료로 이사를 가게 되었는데, 정말 분해해서 가져갈 수 있을까 반신반의했어요. 그런데 정말 가능하더라고요! 새 집에서도 똑같이 설치했습니다!</p>
+                            <p class="mt-4 text-xs text-gray-500">서울 강남구 · 김** 님</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="mt-10 btn bg-white rounded-full p-2 pr-4 flex items-center gap-1.5 border border-gray-200">
+                <img src="<?php echo G5_THEME_URL?>/img/btn-gallery-icon.png">
+                <span class="text-base font-semibold">더 많은 후기 보기</span>
+                <img src="<?php echo G5_THEME_URL?>/img/btn-arrow-right.png">
+            </a>
         </div>
     </section>
     <section class="py-24 flex flex-col gap-12 text-center items-center bg-[url(<?php echo G5_THEME_URL?>/img/indexCta.webp)] bg-cover">

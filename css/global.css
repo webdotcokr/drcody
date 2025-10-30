@@ -63,6 +63,13 @@ a {
 .PageSubTitleText { font-size: 22px; }
 .SectionTitleText { font-size: 36px; line-height:1.2;}
 .BannerTitleText { font-size: 50px; }
+.MainSectionTitleENG {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -.72px;
+  color: #D4C1B3;
+}
 .H1 {font-size: 48px; line-height: 1.2;}
 .H2 {font-size: 36px; line-height: 1.2;}
 .H3 {font-size: 30px; line-height: 1.4;}
@@ -189,6 +196,10 @@ form {
   .PageSubTitleText { font-size: 15px; }
   .SectionTitleText { font-size: 24px; }
   .BannerTitleText { font-size: 26px; }
+  .MainSectionTitleENG {
+  font-size: 18px;
+  letter-spacing: -.72px;
+}
 
 .H1 {font-size: 32px; line-height: 1.2;}
 .H2 {font-size: 36px; line-height: 1.2;}
